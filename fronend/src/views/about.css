@@ -1,0 +1,358 @@
+.about-container {
+  width: 100%;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+ 
+.about-text10 {
+  display: inline-block;
+  font-size: 30px;
+  font-family: "Italiana";
+}
+ 
+.about-text11 {
+  display: inline-block;
+}
+ 
+.about-text12 {
+  color: var(--dl-color-scheme-green100);
+  display: inline-block;
+}
+ 
+.about-text13 {
+  color: var(--dl-color-scheme-green100);
+  display: inline-block;
+}
+ 
+.about-text14 {
+  color: var(--dl-color-scheme-green100);
+  display: inline-block;
+}
+ 
+.about-text15 {
+  color: var(--dl-color-scheme-green100);
+  display: inline-block;
+}
+ 
+.about-text16 {
+  display: inline-block;
+}
+ 
+.about-text17 {
+  display: inline-block;
+}
+ 
+.about-text18 {
+  color: var(--dl-color-scheme-green100);
+  display: inline-block;
+}
+ 
+.about-text19 {
+  font-size: 80px;
+  font-family: "Italiana";
+  margin-bottom: var(--dl-layout-space-fourunits);
+}
+ 
+.about-hero {
+  height: 685px;
+  background-color: transparent;
+}
+ 
+.about-max-width {
+  width: 100%;
+  align-items: center;
+}
+ 
+.about-content {
+  flex: 0 0 auto;
+  width: 667px;
+  display: flex;
+  align-items: flex-start;
+  margin-right: var(--dl-layout-space-twounits);
+  margin-bottom: var(--dl-layout-space-threeunits);
+  flex-direction: column;
+}
+ 
+.about-title {
+  color: var(--dl-color-scheme-white);
+  width: 665px;
+  font-size: 100px;
+  font-style: normal;
+  font-family: "Italiana";
+  font-weight: 400;
+  line-height: 100px;
+  margin-bottom: var(--dl-layout-space-halfunit);
+}
+ 
+.about-text20 {
+  font-size: 35px;
+  align-self: stretch;
+  font-style: normal;
+  font-family: "Italiana";
+  font-weight: 400;
+  margin-bottom: var(--dl-layout-space-oneandhalfunits);
+}
+ 
+.about-description {
+  color: var(--dl-color-scheme-white);
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: var(--dl-layout-space-threeunits);
+}
+ 
+.about-button {
+  font-size: 16px;
+  font-family: "Italiana";
+  border-width: 0px;
+  border-radius: var(--dl-layout-radius-buttonradius);
+  background-color: rgb(255, 74, 59);
+}
+ 
+.about-image {
+  position: relative;
+  padding-bottom: var(--dl-layout-space-eightunits);
+}
+ 
+.about-hero-image {
+  flex: 1;
+  width: 866px;
+  max-width: 550px;
+  object-fit: cover;
+  border-radius: 48px;
+  padding-right: 228px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+ 
+.about-text21 {
+  display: inline-block;
+  font-size: 80px;
+  font-family: "Italiana";
+}
+ 
+.about-text22 {
+  display: inline-block;
+  font-size: 25px;
+  font-family: "Italiana";
+}
+ 
+.about-text23 {
+  display: inline-block;
+  font-size: 25px;
+  font-family: "Italiana";
+  font-weight: 700;
+}
+ 
+.about-text24 {
+  display: inline-block;
+  font-size: 25px;
+  font-family: "Italiana";
+}
+ 
+.about-text25 {
+  display: inline-block;
+  font-size: 25px;
+  font-family: "Italiana";
+}
+ 
+.about-text26 {
+  display: inline-block;
+  font-size: 18px;
+  font-family: "Space Mono";
+}
+ 
+.about-text27 {
+  display: inline-block;
+  font-size: 18px;
+  font-family: "Space Mono";
+}
+ 
+.about-text28 {
+  display: inline-block;
+  font-size: 18px;
+  font-family: "Space Mono";
+}
+ 
+.about-text29 {
+  display: inline-block;
+  font-size: 18px;
+  font-family: "Space Mono";
+}
+ 
+.about-text30 {
+  display: inline-block;
+  font-size: 20px;
+  font-family: "Italiana";
+}
+ 
+.about-text31 {
+  display: inline-block;
+  font-size: 20px;
+  font-family: "Italiana";
+}
+ 
+.about-text32 {
+  display: inline-block;
+  font-size: 20px;
+  font-family: "Italiana";
+}
+ 
+.about-text33 {
+  display: inline-block;
+  font-size: 20px;
+  font-family: "Italiana";
+}
+ 
+.about-text34 {
+  display: inline-block;
+  font-size: 20px;
+  font-family: "Italiana";
+}
+ 
+.about-text35 {
+  display: inline-block;
+  font-size: 20px;
+  font-family: "Italiana";
+}
+ 
+.about-text38 {
+  display: inline-block;
+  font-size: 20px;
+  font-family: "Italiana";
+}
+ 
+.about-text39 {
+  display: inline-block;
+  font-size: 20px;
+  font-family: "Italiana";
+}
+ 
+.about-text40 {
+  display: inline-block;
+  font-size: 18px;
+  font-family: "Italiana";
+}
+ 
+.about-text41 {
+  display: inline-block;
+  font-size: 16px;
+  font-family: "Space Mono";
+}
+ 
+.about-text42 {
+  display: inline-block;
+  font-family: "Space Mono";
+}
+ 
+.about-text43 {
+  display: inline-block;
+}
+ 
+.about-text44 {
+  display: inline-block;
+  font-size: 16px;
+  font-family: "Space Mono";
+}
+ 
+.about-text45 {
+  display: inline-block;
+  font-size: 60px;
+  font-family: "Italiana";
+}
+ 
+.about-text46 {
+  display: inline-block;
+}
+ 
+.about-text47 {
+  display: inline-block;
+}
+ 
+.about-text48 {
+  display: inline-block;
+}
+ 
+.about-text49 {
+  display: inline-block;
+}
+ 
+.about-text50 {
+  display: inline-block;
+}
+ 
+.about-text51 {
+  display: inline-block;
+}
+ 
+.about-text52 {
+  display: inline-block;
+}
+ 
+.about-text53 {
+  display: inline-block;
+}
+ 
+.about-text54 {
+  color: var(--dl-color-scheme-green100);
+  display: inline-block;
+  font-family: "Italiana";
+}
+ 
+.about-text55 {
+  display: inline-block;
+  font-family: "Space Mono";
+}
+ 
+.about-text56 {
+  display: inline-block;
+}
+ 
+.about-text57 {
+  display: inline-block;
+}
+ 
+.about-text61 {
+  display: inline-block;
+  font-size: 34px;
+  font-family: "Italiana";
+}
+ 
+.about-text62 {
+  display: inline-block;
+  font-size: 34px;
+  font-family: "Italiana";
+}
+ 
+.about-text63 {
+  display: inline-block;
+  font-size: 34px;
+  font-family: "Italiana";
+}
+ 
+@media(max-width: 991px) {
+  .about-content {
+    width: 50%;
+    margin-right: var(--dl-layout-space-unit);
+  }
+  .about-image {
+    padding-bottom: var(--dl-layout-space-threeunits);
+  }
+  .about-hero-image {
+    margin-bottom: 0px;
+  }
+}
+ 
+@media(max-width: 767px) {
+  .about-max-width {
+    flex-direction: column-reverse;
+  }
+  .about-content {
+    width: 100%;
+    margin-right: 0px;
+  }
+  .about-hero-image {
+    margin-right: 0px;
+  }
+}

@@ -1,0 +1,611 @@
+.home-container1 {
+  width: 100%;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+ 
+.home-text10 {
+  display: inline-block;
+  font-size: 30px;
+  font-family: "Italiana";
+}
+ 
+.home-text11 {
+  display: inline-block;
+}
+ 
+.home-text12 {
+  color: var(--dl-color-scheme-green100);
+  display: inline-block;
+}
+ 
+.home-text13 {
+  color: var(--dl-color-scheme-green100);
+  display: inline-block;
+}
+ 
+.home-text14 {
+  color: var(--dl-color-scheme-green100);
+  display: inline-block;
+}
+ 
+.home-text15 {
+  color: var(--dl-color-scheme-green100);
+  display: inline-block;
+}
+ 
+.home-text16 {
+  display: inline-block;
+}
+ 
+.home-text17 {
+  display: inline-block;
+}
+ 
+.home-text18 {
+  color: var(--dl-color-scheme-green100);
+  display: inline-block;
+}
+ 
+.home-hero {
+  background-color: transparent;
+}
+ 
+.home-max-width1 {
+  align-items: center;
+  background-color: #ff4a3b;
+}
+ 
+.home-content1 {
+  flex: 0 0 auto;
+  width: 667px;
+  display: flex;
+  align-items: flex-start;
+  margin-right: var(--dl-layout-space-twounits);
+  margin-bottom: var(--dl-layout-space-threeunits);
+  flex-direction: column;
+}
+ 
+.home-subtitle {
+  color: var(--dl-color-scheme-orange100);
+  font-size: 24px;
+  font-style: normal;
+  font-family: "Italiana";
+  font-weight: 400;
+  line-height: 1.15;
+  margin-bottom: var(--dl-layout-space-unit);
+  letter-spacing: 10.8px;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+ 
+.home-title1 {
+  color: var(--dl-color-scheme-white);
+  width: 665px;
+  font-size: 100px;
+  font-style: normal;
+  font-family: "Italiana";
+  font-weight: 400;
+  line-height: 100px;
+  margin-bottom: var(--dl-layout-space-twounits);
+}
+ 
+.home-description {
+  color: var(--dl-color-scheme-white);
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: var(--dl-layout-space-threeunits);
+}
+ 
+.home-text19 {
+  font-family: "Italiana";
+}
+ 
+.home-container2 {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: stretch;
+  flex-direction: row;
+}
+ 
+.home-text21 {
+  font-size: 16px;
+  font-family: "Italiana";
+}
+ 
+.home-image1 {
+  position: relative;
+  padding-bottom: var(--dl-layout-space-eightunits);
+}
+ 
+.home-hero-image {
+  flex: 1;
+  width: 866px;
+  max-width: 550px;
+  object-fit: cover;
+  border-radius: 48px;
+  padding-right: 228px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+ 
+.home-max-width2 {
+  align-items: stretch;
+}
+ 
+.home-content2 {
+  width: 50%;
+  display: flex;
+  margin-right: var(--dl-layout-space-twounits);
+  flex-direction: column;
+  justify-content: center;
+}
+ 
+.home-text22 {
+  color: var(--dl-color-scheme-red) #ffffff;
+  font-size: 16px;
+  margin-bottom: var(--dl-layout-space-unit);
+  letter-spacing: 10.8px;
+}
+ 
+.home-text23 {
+  font-size: 65px;
+  font-style: normal;
+  font-family: "Italiana";
+  font-weight: 400;
+  line-height: 1.25;
+  margin-bottom: var(--dl-layout-space-twounits);
+}
+ 
+.home-text24 {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: var(--dl-layout-space-threeunits);
+}
+ 
+.home-container3 {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: stretch;
+  flex-direction: row;
+}
+ 
+.home-text25 {
+  font-family: "Italiana";
+}
+ 
+.home-content3 {
+  width: 611px;
+  display: flex;
+  margin-top: var(--dl-layout-space-twounits);
+  margin-bottom: var(--dl-layout-space-twounits);
+  flex-direction: column;
+  justify-content: center;
+}
+ 
+.home-step1 {
+  display: flex;
+  margin-bottom: var(--dl-layout-space-twounits);
+  flex-direction: row;
+}
+ 
+.home-number1 {
+  flex: 0 0 auto;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  margin-right: var(--dl-layout-space-twounits);
+  border-radius: var(--dl-layout-radius-radius16);
+  flex-direction: column;
+  justify-content: center;
+  background-color: #121212;
+}
+ 
+.home-text26 {
+  color: var(--dl-color-scheme-green100);
+  font-size: 28px;
+  font-style: normal;
+  font-family: "Urbanist";
+  font-weight: 700;
+  line-height: 1.5;
+}
+ 
+.home-container4 {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+ 
+.home-title2 {
+  color: var(--dl-color-scheme-white);
+  font-size: 25px;
+  font-style: normal;
+  font-family: "Italiana";
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: var(--dl-layout-space-halfunit);
+}
+ 
+.home-text27 {
+  color: var(--dl-color-scheme-white);
+  line-height: 1.5;
+}
+ 
+.home-step2 {
+  display: flex;
+  margin-bottom: var(--dl-layout-space-twounits);
+  flex-direction: row;
+}
+ 
+.home-number2 {
+  flex: 0 0 auto;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  margin-right: var(--dl-layout-space-twounits);
+  border-radius: var(--dl-layout-radius-radius16);
+  flex-direction: column;
+  justify-content: center;
+  background-color: #1b1919;
+}
+ 
+.home-text28 {
+  font-size: 28px;
+  font-style: normal;
+  font-family: Urbanist;
+  font-weight: 700;
+  line-height: 1.5;
+}
+ 
+.home-container5 {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+ 
+.home-title3 {
+  color: var(--dl-color-scheme-white);
+  font-size: 25px;
+  font-style: normal;
+  font-family: "Italiana";
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: var(--dl-layout-space-halfunit);
+}
+ 
+.home-text29 {
+  color: var(--dl-color-scheme-white);
+  line-height: 1.5;
+}
+ 
+.home-step3 {
+  display: flex;
+  flex-direction: row;
+}
+ 
+.home-number3 {
+  flex: 0 0 auto;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  margin-right: var(--dl-layout-space-twounits);
+  border-radius: var(--dl-layout-radius-radius16);
+  flex-direction: column;
+  justify-content: center;
+  background-color: #252424;
+}
+ 
+.home-text30 {
+  font-size: 28px;
+  font-style: normal;
+  font-family: Urbanist;
+  font-weight: 700;
+  line-height: 1.5;
+}
+ 
+.home-container6 {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+ 
+.home-title4 {
+  color: var(--dl-color-scheme-white);
+  font-size: 25px;
+  font-style: normal;
+  font-family: "Italiana";
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: var(--dl-layout-space-halfunit);
+}
+ 
+.home-text31 {
+  color: var(--dl-color-scheme-white);
+  line-height: 1.5;
+}
+ 
+.home-max-width3 {
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+ 
+.home-text32 {
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Space Mono";
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: var(--dl-layout-space-halfunit);
+  letter-spacing: 10.8px;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+ 
+.home-text33 {
+  font-size: 65px;
+  font-style: normal;
+  text-align: center;
+  font-family: "Italiana";
+  font-weight: 400;
+  line-height: 1.25;
+  margin-bottom: var(--dl-layout-space-threeunits);
+}
+ 
+.home-cards-container {
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: space-between;
+}
+ 
+.home-text34 {
+  display: inline-block;
+}
+ 
+.home-text35 {
+  display: inline-block;
+}
+ 
+.home-text36 {
+  display: inline-block;
+}
+ 
+.home-container7 {
+  flex: 0 0 auto;
+  display: flex;
+  margin-top: var(--dl-layout-space-oneandhalfunits);
+  align-items: flex-start;
+}
+ 
+.home-text37 {
+  font-family: "Italiana";
+}
+ 
+.home-section3 {
+  padding-top: 0px;
+}
+ 
+.home-max-width4 {
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+ 
+.home-text38 {
+  display: inline-block;
+}
+ 
+.home-text39 {
+  display: inline-block;
+}
+ 
+.home-text40 {
+  display: inline-block;
+}
+ 
+.home-text41 {
+  display: inline-block;
+  font-family: "Italiana";
+}
+ 
+.home-text42 {
+  display: inline-block;
+}
+ 
+.home-text43 {
+  display: inline-block;
+  font-family: "Italiana";
+}
+ 
+.home-text44 {
+  display: inline-block;
+}
+ 
+.home-text45 {
+  display: inline-block;
+  letter-spacing: 10.8px;
+}
+ 
+.home-text46 {
+  display: inline-block;
+  font-size: 65px;
+  font-family: "Italiana";
+}
+ 
+.home-text47 {
+  display: inline-block;
+  font-size: 25px;
+  font-family: "Italiana";
+}
+ 
+.home-text48 {
+  display: inline-block;
+  font-size: 25px;
+  font-family: "Italiana";
+}
+ 
+.home-text49 {
+  display: inline-block;
+}
+ 
+.home-text50 {
+  display: inline-block;
+}
+ 
+.home-text51 {
+  display: inline-block;
+  font-family: "Space Mono";
+}
+ 
+.home-text52 {
+  display: inline-block;
+  font-family: "Space Mono";
+}
+ 
+.home-text53 {
+  display: inline-block;
+}
+ 
+.home-text54 {
+  display: inline-block;
+}
+ 
+.home-text55 {
+  display: inline-block;
+}
+ 
+.home-text56 {
+  display: inline-block;
+}
+ 
+.home-text57 {
+  display: inline-block;
+}
+ 
+.home-text58 {
+  display: inline-block;
+}
+ 
+.home-text59 {
+  display: inline-block;
+}
+ 
+.home-text60 {
+  display: inline-block;
+}
+ 
+.home-text61 {
+  color: var(--dl-color-scheme-green100);
+  display: inline-block;
+  font-family: "Italiana";
+}
+ 
+.home-text62 {
+  display: inline-block;
+  font-family: "Space Mono";
+}
+ 
+.home-text63 {
+  display: inline-block;
+}
+ 
+.home-text64 {
+  display: inline-block;
+}
+ 
+.home-text68 {
+  display: inline-block;
+  font-size: 34px;
+  font-family: "Italiana";
+}
+ 
+.home-text69 {
+  display: inline-block;
+  font-size: 34px;
+  font-family: "Italiana";
+}
+ 
+.home-text70 {
+  display: inline-block;
+  font-size: 34px;
+  font-family: "Italiana";
+}
+ 
+@media(max-width: 991px) {
+  .home-content1 {
+    width: 50%;
+    margin-right: var(--dl-layout-space-unit);
+  }
+  .home-image1 {
+    padding-bottom: var(--dl-layout-space-threeunits);
+  }
+  .home-hero-image {
+    margin-bottom: 0px;
+  }
+  .home-max-width2 {
+    flex-direction: column;
+  }
+  .home-content2 {
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: var(--dl-layout-space-threeunits);
+  }
+  .home-image2 {
+    padding-bottom: 0px;
+  }
+  .home-content3 {
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .home-max-width3 {
+    flex-direction: column;
+  }
+  .home-max-width4 {
+    flex-direction: column;
+  }
+}
+ 
+@media(max-width: 767px) {
+  .home-max-width1 {
+    flex-direction: column-reverse;
+  }
+  .home-content1 {
+    width: 100%;
+    margin-right: 0px;
+  }
+  .home-hero-image {
+    margin-right: 0px;
+  }
+  .home-content2 {
+    width: 100%;
+    margin-right: 0px;
+  }
+  .home-content3 {
+    width: 100%;
+    margin-right: 0px;
+  }
+  .home-cards-container {
+    gap: var(--dl-layout-space-oneandhalfunits);
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+ 
+@media(max-width: 479px) {
+  .home-title1 {
+    width: auto;
+  }
+}
