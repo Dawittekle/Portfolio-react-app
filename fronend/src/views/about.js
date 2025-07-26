@@ -13,7 +13,7 @@ const About = (props) => {
   return (
     <div className="about-container">
       <Helmet>
-        <title>About - Up Start Finance</title>
+        <title>About - Dawit Teklebrhan</title>
         <meta property="og:title" content="About - Up Start Finance" />
       </Helmet>
       <Hnav

@@ -12,7 +12,7 @@ const Home = (props) => {
   return (
     <div className="home-container1">
       <Helmet>
-        <title>Up Start Finance</title>
+        <title>Dawit Teklebrhan</title>
         <meta property="og:title" content="Up Start Finance" />
       </Helmet>
       <Hnav
@@ -78,7 +78,7 @@ const Home = (props) => {
               </span>
             </span>
             <div className="home-container2">
-              <span className="home-text21">Read More →</span>
+              <span className="home-text21">Read More</span>
             </div>
           </div>
           <div className="home-image1">
@@ -103,7 +103,7 @@ const Home = (props) => {
               Here’s what I do:
             </span>
             <div className="home-container3">
-              <span className="home-text25">Read More →</span>
+              <span className="home-text25">Read More</span>
             </div>
           </div>
           <div className="home-image2">
@@ -123,8 +123,8 @@ const Home = (props) => {
                 </div>
               </div>
               <div className="home-step2">
-                <div className="home-number2">
-                  <span className="home-text28">2</span>
+                <div className="home-number1">
+                  <span className="home-text26">2</span>
                 </div>
                 <div className="home-container5">
                   <span className="home-title3">Web UI/UX Design</span>
@@ -136,8 +136,8 @@ const Home = (props) => {
                 </div>
               </div>
               <div className="home-step3">
-                <div className="home-number3">
-                  <span className="home-text30">3</span>
+                <div className="home-number1">
+                  <span className="home-text26">3</span>
                 </div>
                 <div className="home-container6">
                   <span className="home-title4">AI-Integrated Solutions</span>
@@ -164,7 +164,7 @@ const Home = (props) => {
               text1='"Tiny games. Big fun. All in JavaScript!"'
               text3={
                 <Fragment>
-                  <span className="home-text34">Read More →</span>
+                  <span className="home-text34">Read More</span>
                 </Fragment>
               }
               rootClassName="cardroot-class-name"
@@ -174,7 +174,7 @@ const Home = (props) => {
               text1="Webapp connects truck owners with people(that want to move items between places like household items...)."
               text3={
                 <Fragment>
-                  <span className="home-text35">Read More →</span>
+                  <span className="home-text34">Read More</span>
                 </Fragment>
               }
               rootClassName="cardroot-class-name2"
@@ -184,7 +184,7 @@ const Home = (props) => {
               text1='"Find or list the perfect place for any event!"'
               text3={
                 <Fragment>
-                  <span className="home-text36">Read More →</span>
+                  <span className="home-text34">Read More</span>
                 </Fragment>
               }
               rootClassName="cardroot-class-name1"
@@ -215,22 +215,22 @@ const Home = (props) => {
             }
             text3={
               <Fragment>
-                <span className="home-text41">Read More →</span>
+                <span className="home-text41">Read More</span>
               </Fragment>
             }
             text4={
               <Fragment>
-                <span className="home-text42">Read More →</span>
+                <span className="home-text41">Read More</span>
               </Fragment>
             }
             text5={
               <Fragment>
-                <span className="home-text43">Read More →</span>
+                <span className="home-text41">Read More</span>
               </Fragment>
             }
             text6={
               <Fragment>
-                <span className="home-text44">View More</span>
+                <span className="home-text41">View More</span>
               </Fragment>
             }
             slogan1={
@@ -252,14 +252,14 @@ const Home = (props) => {
             }
             feature2Title={
               <Fragment>
-                <span className="home-text48">
+                <span className="home-text47">
                   10 Reasons why you should make a physical portfolio
                 </span>
               </Fragment>
             }
             feature3Title={
               <Fragment>
-                <span className="home-text49">
+                <span className="home-text47">
                   10 Reasons why you should make a physical portfolio
                 </span>
               </Fragment>
@@ -307,22 +307,22 @@ const Home = (props) => {
         }
         link2={
           <Fragment>
-            <span className="home-text55">Services</span>
+            <span className="home-text54">Services</span>
           </Fragment>
         }
         link3={
           <Fragment>
-            <span className="home-text56">Projects</span>
+            <span className="home-text54">Projects</span>
           </Fragment>
         }
         link4={
           <Fragment>
-            <span className="home-text57">Blog</span>
+            <span className="home-text54">Blog</span>
           </Fragment>
         }
         link5={
           <Fragment>
-            <span className="home-text58">Contact</span>
+            <span className="home-text54">Contact</span>
           </Fragment>
         }
         phone={

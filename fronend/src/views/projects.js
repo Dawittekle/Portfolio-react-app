@@ -11,7 +11,7 @@ const Projects = (props) => {
   return (
     <div className="projects-container">
       <Helmet>
-        <title>Projects - Up Start Finance</title>
+        <title>Projects - Dawit Teklebrhan</title>
         <meta property="og:title" content="Projects - Up Start Finance" />
       </Helmet>
       <Hnav

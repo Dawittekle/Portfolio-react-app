@@ -14,7 +14,7 @@ const Card = (props) => {
           <span className="card-text3">
             {props.text3 ?? (
               <Fragment>
-                <span className="card-text4">Read More →</span>
+                <span className="card-text4">Read More</span>
               </Fragment>
             )}
           </span>

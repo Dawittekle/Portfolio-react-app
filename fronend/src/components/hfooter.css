@@ -227,48 +227,29 @@
   align-items: center;
   flex-shrink: 0;
 }
+
+.hfooter-link6:hover{
+  color: #ff4a3b;
+  transition: 0.5s;
+}
  
 .hfooter-social-link1 {
   font-size: 18px;
   font-family: "Space Mono";
 }
  
-.hfooter-link7 {
-  gap: 12px;
-  display: flex;
-  padding: 8px 0;
-  align-self: stretch;
-  align-items: center;
-  flex-shrink: 0;
-}
  
 .hfooter-social-link2 {
   font-size: 18px;
   font-family: "Space Mono";
 }
  
-.hfooter-link8 {
-  gap: 12px;
-  display: flex;
-  padding: 8px 0;
-  align-self: stretch;
-  align-items: center;
-  flex-shrink: 0;
-}
  
 .hfooter-social-link3 {
   font-size: 18px;
   font-family: "Space Mono";
 }
  
-.hfooter-link9 {
-  gap: 12px;
-  display: flex;
-  padding: 8px 0;
-  align-self: stretch;
-  align-items: center;
-  flex-shrink: 0;
-}
  
 .hfooter-social-link4 {
   font-size: 18px;

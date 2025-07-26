@@ -198,6 +198,11 @@
   font-size: 25px;
   font-family: "Italiana";
 }
+
+.hblog-text32:hover{
+  font-size: 27px;
+  text-decoration: underline;
+}
  
 .hblog-text33 {
   display: inline-block;

@@ -175,7 +175,7 @@ const Hfooter = (props) => {
                     Facebook
                   </span>
                 </div>
-                <div className="hfooter-link7">
+                <div className="hfooter-link6">
                   <svg
                     viewBox="0 0 877.7142857142857 1024"
                     className="thq-icon-small"
@@ -186,7 +186,7 @@ const Hfooter = (props) => {
                     Instagram
                   </span>
                 </div>
-                <div className="hfooter-link8">
+                <div className="hfooter-link6">
                   <svg
                     viewBox="0 0 950.8571428571428 1024"
                     className="thq-icon-small"
@@ -195,7 +195,7 @@ const Hfooter = (props) => {
                   </svg>
                   <span className="hfooter-social-link3 thq-body-small">X</span>
                 </div>
-                <div className="hfooter-link9">
+                <div className="hfooter-link6">
                   <svg
                     viewBox="0 0 877.7142857142857 1024"
                     className="thq-icon-small"

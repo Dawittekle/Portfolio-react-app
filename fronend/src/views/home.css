@@ -102,6 +102,11 @@
 .home-text19 {
   font-family: "Italiana";
 }
+
+.home-text19:hover{
+  font-size: 25px;
+  transition: 0.5s;
+}
  
 .home-container2 {
   flex: 0 0 auto;
@@ -113,6 +118,12 @@
 .home-text21 {
   font-size: 16px;
   font-family: "Italiana";
+}
+
+.home-text21:hover{
+  font-size: 18px;
+  text-decoration: underline;
+  transition: 0.5s;
 }
  
 .home-image1 {
@@ -158,6 +169,12 @@
   line-height: 1.25;
   margin-bottom: var(--dl-layout-space-twounits);
 }
+
+.home-text23:hover{
+  color: #ff4a3b;
+  font-size: 67px;
+  transition: 0.5s;
+}
  
 .home-text24 {
   font-size: 16px;
@@ -174,6 +191,14 @@
  
 .home-text25 {
   font-family: "Italiana";
+  cursor: pointer;
+}
+
+.home-text25:hover{
+  color: #ff4a3b;
+  text-decoration: underline;
+  font-size: 17px;
+  transition: 0.5s;
 }
  
 .home-content3 {
@@ -203,6 +228,13 @@
   justify-content: center;
   background-color: #121212;
 }
+
+.home-number1:hover{
+  background-color:#ff4a3b;
+  width: 67px;
+  height: 67px;
+  transition: 0.5s;
+}
  
 .home-text26 {
   color: var(--dl-color-scheme-green100);
@@ -211,6 +243,11 @@
   font-family: "Urbanist";
   font-weight: 700;
   line-height: 1.5;
+}
+
+.home-text26:hover{
+  font-size: 30px;
+  transition: 0.5s;
 }
  
 .home-container4 {
@@ -241,27 +278,6 @@
   flex-direction: row;
 }
  
-.home-number2 {
-  flex: 0 0 auto;
-  width: 64px;
-  height: 64px;
-  display: flex;
-  align-items: center;
-  margin-right: var(--dl-layout-space-twounits);
-  border-radius: var(--dl-layout-radius-radius16);
-  flex-direction: column;
-  justify-content: center;
-  background-color: #1b1919;
-}
- 
-.home-text28 {
-  font-size: 28px;
-  font-style: normal;
-  font-family: Urbanist;
-  font-weight: 700;
-  line-height: 1.5;
-}
- 
 .home-container5 {
   flex: 1;
   display: flex;
@@ -287,27 +303,6 @@
 .home-step3 {
   display: flex;
   flex-direction: row;
-}
- 
-.home-number3 {
-  flex: 0 0 auto;
-  width: 64px;
-  height: 64px;
-  display: flex;
-  align-items: center;
-  margin-right: var(--dl-layout-space-twounits);
-  border-radius: var(--dl-layout-radius-radius16);
-  flex-direction: column;
-  justify-content: center;
-  background-color: #252424;
-}
- 
-.home-text30 {
-  font-size: 28px;
-  font-style: normal;
-  font-family: Urbanist;
-  font-weight: 700;
-  line-height: 1.5;
 }
  
 .home-container6 {
@@ -359,6 +354,12 @@
   line-height: 1.25;
   margin-bottom: var(--dl-layout-space-threeunits);
 }
+
+.home-text33:hover{
+  color: #ff4a3b;
+  font-size: 67px;
+  transition: 0.5s;
+}
  
 .home-cards-container {
   flex: 0 0 auto;
@@ -371,14 +372,13 @@
  
 .home-text34 {
   display: inline-block;
+  cursor: pointer;
 }
- 
-.home-text35 {
-  display: inline-block;
-}
- 
-.home-text36 {
-  display: inline-block;
+
+.home-text34:hover{
+  text-decoration: underline;
+  font-size: 17px;
+  transition: 0.5s;
 }
  
 .home-container7 {
@@ -390,6 +390,14 @@
  
 .home-text37 {
   font-family: "Italiana";
+  cursor: pointer;
+}
+
+.home-text37:hover{
+  font-size: 17px;
+  color: #ff4a3b;
+  text-decoration: underline;
+  transition: 0.5s;
 }
  
 .home-section3 {
@@ -418,6 +426,13 @@
   display: inline-block;
   font-family: "Italiana";
 }
+
+.home-text41:hover{
+  font-size: 17px;
+  text-decoration: underline;
+  color: #ff4a3b;
+  transition: 0.5s;
+}
  
 .home-text42 {
   display: inline-block;
@@ -442,21 +457,24 @@
   font-size: 65px;
   font-family: "Italiana";
 }
+
+.home-text46:hover{
+  font-size: 67px;
+  color: #ff4a3b;
+  transition: 0.5s;
+
+}
  
 .home-text47 {
   display: inline-block;
   font-size: 25px;
   font-family: "Italiana";
 }
- 
-.home-text48 {
-  display: inline-block;
-  font-size: 25px;
-  font-family: "Italiana";
-}
- 
-.home-text49 {
-  display: inline-block;
+
+.home-text47:hover{
+  font-size: 27px;
+  text-decoration: underline;
+  transition: 0.5s;
 }
  
 .home-text50 {
@@ -480,30 +498,12 @@
 .home-text54 {
   display: inline-block;
 }
- 
-.home-text55 {
-  display: inline-block;
+.home-text54:hover{
+  color: #ff4a3b;
+  transition: 0.5s;
 }
  
-.home-text56 {
-  display: inline-block;
-}
  
-.home-text57 {
-  display: inline-block;
-}
- 
-.home-text58 {
-  display: inline-block;
-}
- 
-.home-text59 {
-  display: inline-block;
-}
- 
-.home-text60 {
-  display: inline-block;
-}
  
 .home-text61 {
   color: var(--dl-color-scheme-green100);
