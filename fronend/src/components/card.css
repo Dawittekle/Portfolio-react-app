@@ -32,6 +32,12 @@
   background-color: #ff4a3b;
 }
 
+.card-info:hover {
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(255, 254, 254, 0.2);
+  transition: 0.3s;
+}
+
 .card-text1 {
   font-size: 25px;
   font-style: normal;
