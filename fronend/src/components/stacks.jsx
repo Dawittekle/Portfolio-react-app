@@ -24,11 +24,11 @@ const Stacks = (props) => {
             )}
           </h2>
         </div>
-        <div className="stacks-container2 thq-card thq-flex-column">
+        <div className="stacks-container1 thq-card thq-flex-column">
           <img
             alt={props.feature2ImageAlt}
             src={props.feature2ImageSrc}
-            className="stacks-image2 thq-img-ratio-1-1 thq-img-round"
+            className="stacks-image1 thq-img-ratio-1-1 thq-img-round"
           />
           <h2 className="thq-heading-2">
             {props.feature2Title ?? (
@@ -38,11 +38,11 @@ const Stacks = (props) => {
             )}
           </h2>
         </div>
-        <div className="stacks-container3 thq-card thq-flex-column">
+        <div className="stacks-container1 thq-card thq-flex-column">
           <img
             alt={props.feature3ImageAlt}
             src={props.feature3ImageSrc}
-            className="stacks-image3 thq-img-ratio-1-1 thq-img-round"
+            className="stacks-image1 thq-img-ratio-1-1 thq-img-round"
           />
           <h2 className="thq-heading-2">
             {props.feature3Title ?? (
@@ -52,11 +52,11 @@ const Stacks = (props) => {
             )}
           </h2>
         </div>
-        <div className="stacks-container4 thq-card thq-flex-column">
+        <div className="stacks-container1 thq-card thq-flex-column">
           <img
             alt={props.feature4ImageAlt}
             src={props.feature4ImageSrc}
-            className="stacks-image4 thq-img-ratio-1-1 thq-img-round"
+            className="stacks-image1 thq-img-ratio-1-1 thq-img-round"
           />
           <h2 className="thq-heading-2">
             {props.feature4Title ?? (
@@ -66,11 +66,11 @@ const Stacks = (props) => {
             )}
           </h2>
         </div>
-        <div className="stacks-container5 thq-card thq-flex-column">
+        <div className="stacks-container1 thq-card thq-flex-column">
           <img
             alt={props.feature4ImageAlt2}
             src={props.feature4ImageSrc2}
-            className="stacks-image5 thq-img-ratio-1-1 thq-img-round"
+            className="stacks-image1 thq-img-ratio-1-1 thq-img-round"
           />
           <h2 className="thq-heading-2">
             {props.feature4Title2 ?? (
@@ -80,11 +80,11 @@ const Stacks = (props) => {
             )}
           </h2>
         </div>
-        <div className="stacks-container6 thq-card thq-flex-column">
+        <div className="stacks-container1 thq-card thq-flex-column">
           <img
             alt={props.feature4ImageAlt3}
             src={props.feature4ImageSrc3}
-            className="stacks-image6 thq-img-ratio-1-1 thq-img-round"
+            className="stacks-image1 thq-img-ratio-1-1 thq-img-round"
           />
           <h2 className="thq-heading-2">
             {props.feature4Title3 ?? (
@@ -103,11 +103,11 @@ const Stacks = (props) => {
             )}
           </h2>
         </div>
-        <div className="stacks-container7 thq-card thq-flex-column">
+        <div className="stacks-container1 thq-card thq-flex-column">
           <img
             alt={props.feature4ImageAlt4}
             src={props.feature4ImageSrc4}
-            className="stacks-image7 thq-img-ratio-1-1 thq-img-round"
+            className="stacks-image1 thq-img-ratio-1-1 thq-img-round"
           />
           <h2 className="thq-heading-2">
             {props.feature4Title4 ?? (
@@ -117,11 +117,11 @@ const Stacks = (props) => {
             )}
           </h2>
         </div>
-        <div className="stacks-container8 thq-card thq-flex-column">
+        <div className="stacks-container1 thq-card thq-flex-column">
           <img
             alt={props.feature4ImageAlt5}
             src={props.feature4ImageSrc5}
-            className="stacks-image8 thq-img-ratio-1-1 thq-img-round"
+            className="stacks-image1 thq-img-ratio-1-1 thq-img-round"
           />
           <h2 className="thq-heading-2">
             {props.feature4Title5 ?? (
@@ -131,11 +131,11 @@ const Stacks = (props) => {
             )}
           </h2>
         </div>
-        <div className="stacks-container9 thq-card thq-flex-column">
+        <div className="stacks-container1 thq-card thq-flex-column">
           <img
             alt={props.feature4ImageAlt6}
             src={props.feature4ImageSrc6}
-            className="stacks-image9 thq-img-ratio-1-1 thq-img-round"
+            className="stacks-image1 thq-img-ratio-1-1 thq-img-round"
           />
           <h2 className="thq-heading-2">
             {props.feature4Title6 ?? (

@@ -85,6 +85,12 @@
   line-height: 100px;
   margin-bottom: var(--dl-layout-space-halfunit);
 }
+
+.about-title:hover{
+  color: #ff4a3bff;
+  line-height: 110px;
+  transition: 0.5s;
+}
  
 .about-text20 {
   font-size: 35px;
@@ -109,6 +115,12 @@
   border-radius: var(--dl-layout-radius-buttonradius);
   background-color: rgb(255, 74, 59);
 }
+.about-button:hover{
+  background-color: white;
+  color:#ff4a3bff ;
+  font-size: 18px;
+  transition: 0.5s;
+}
  
 .about-image {
   position: relative;
@@ -131,30 +143,23 @@
   font-size: 80px;
   font-family: "Italiana";
 }
+
+.about-text21:hover{
+  font-size: 82px;
+  color: #ff4a3bff;
+  transition: 0.5s;
+}
  
 .about-text22 {
   display: inline-block;
   font-size: 25px;
   font-family: "Italiana";
 }
- 
-.about-text23 {
-  display: inline-block;
-  font-size: 25px;
-  font-family: "Italiana";
-  font-weight: 700;
-}
- 
-.about-text24 {
-  display: inline-block;
-  font-size: 25px;
-  font-family: "Italiana";
-}
- 
-.about-text25 {
-  display: inline-block;
-  font-size: 25px;
-  font-family: "Italiana";
+
+.about-text22:hover{
+  color: #ff4a3bff;
+  font-size: 26px;
+  transition: 0.5s;
 }
  
 .about-text26 {
@@ -269,21 +274,11 @@
 .about-text47 {
   display: inline-block;
 }
- 
-.about-text48 {
-  display: inline-block;
-}
- 
-.about-text49 {
-  display: inline-block;
-}
- 
-.about-text50 {
-  display: inline-block;
-}
- 
-.about-text51 {
-  display: inline-block;
+
+.about-text47:hover{
+  color: #ff4a3bff;
+  text-decoration: underline;
+  transition: 0.5s;
 }
  
 .about-text52 {

@@ -234,7 +234,7 @@ const Hfooter = (props) => {
                   </Fragment>
                 )}
               </span>
-              <span className="hfooter-link13 thq-body-small">
+              <span className="hfooter-link11 thq-body-small">
                 {props.cookiesLink ?? (
                   <Fragment>
                     <span className="hfooter-text18">Contact me</span>

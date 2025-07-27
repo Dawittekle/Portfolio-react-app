@@ -108,17 +108,17 @@ const About = (props) => {
         }
         feature2Title={
           <Fragment>
-            <span className="about-text23">Creative UI/UX Design</span>
+            <span className="about-text22">Creative UI/UX Design</span>
           </Fragment>
         }
         feature3Title={
           <Fragment>
-            <span className="about-text24">AI-Integrated Solutions</span>
+            <span className="about-text22">AI-Integrated Solutions</span>
           </Fragment>
         }
         feature4Title={
           <Fragment>
-            <span className="about-text25">Customized Projects</span>
+            <span className="about-text22">Customized Projects</span>
           </Fragment>
         }
         feature1ImageSrc="/myphotos/icons%20beige_green-600w.jpg"
@@ -281,22 +281,22 @@ const About = (props) => {
         }
         link2={
           <Fragment>
-            <span className="about-text48">Services</span>
+            <span className="about-text47">Services</span>
           </Fragment>
         }
         link3={
           <Fragment>
-            <span className="about-text49">Projects</span>
+            <span className="about-text47">Projects</span>
           </Fragment>
         }
         link4={
           <Fragment>
-            <span className="about-text50">Blog</span>
+            <span className="about-text47">Blog</span>
           </Fragment>
         }
         link5={
           <Fragment>
-            <span className="about-text51">Contact</span>
+            <span className="about-text47">Contact</span>
           </Fragment>
         }
         phone={

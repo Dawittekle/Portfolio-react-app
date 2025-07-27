@@ -46,7 +46,7 @@ const Servicelists = (props) => {
               </div>
             </div>
           </div>
-          <div className="servicelists-feature2">
+          <div className="servicelists-feature1">
             <img
               alt={props.feature2ImageAlt}
               src={props.feature2ImageSrc}
@@ -75,7 +75,7 @@ const Servicelists = (props) => {
               <div className="servicelists-action1 thq-flex-row"></div>
             </div>
           </div>
-          <div className="servicelists-feature3">
+          <div className="servicelists-feature1">
             <img
               alt={props.feature3ImageAlt}
               src={props.feature3ImageSrc}
@@ -105,7 +105,7 @@ const Servicelists = (props) => {
               </div>
             </div>
           </div>
-          <div className="servicelists-feature4">
+          <div className="servicelists-feature1">
             <img
               alt={props.feature4ImageAlt}
               src={props.feature4ImageSrc}

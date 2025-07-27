@@ -21,6 +21,12 @@
   flex-direction: column;
   justify-content: center;
   background-color: var(--dl-color-theme-primary1);
+  cursor: pointer;
+}
+
+.stacks-container1:hover{
+  padding: 50px;
+  transition: 0.5s;
 }
  
 .stacks-image1 {
@@ -32,150 +38,6 @@
 .stacks-text10 {
   font-size: 16px;
   font-family: "Italiana";
-}
- 
-.stacks-container2 {
-  color: var(--dl-color-theme-neutral-light);
-  height: auto;
-  display: flex;
-  align-self: flex-start;
-  align-items: center;
-  border-radius: var(--dl-layout-radius-inputradius);
-  flex-direction: column;
-  justify-content: center;
-  background-color: var(--dl-color-theme-primary2);
-}
- 
-.stacks-image2 {
-  width: var(--dl-layout-size-medium);
-  height: var(--dl-layout-size-medium);
-  object-fit: cover;
-}
- 
-.stacks-container3 {
-  color: var(--dl-color-theme-neutral-light);
-  height: auto;
-  display: flex;
-  align-self: flex-start;
-  align-items: center;
-  border-radius: var(--dl-layout-radius-inputradius);
-  flex-direction: column;
-  justify-content: center;
-  background-color: var(--dl-color-theme-primary1);
-}
- 
-.stacks-image3 {
-  width: var(--dl-layout-size-medium);
-  height: var(--dl-layout-size-medium);
-  object-fit: cover;
-}
- 
-.stacks-container4 {
-  color: var(--dl-color-theme-neutral-light);
-  height: auto;
-  display: flex;
-  align-self: flex-start;
-  align-items: center;
-  border-radius: var(--dl-layout-radius-inputradius);
-  flex-direction: column;
-  justify-content: center;
-  background-color: var(--dl-color-theme-primary2);
-}
- 
-.stacks-image4 {
-  width: var(--dl-layout-size-medium);
-  height: var(--dl-layout-size-medium);
-  object-fit: cover;
-}
- 
-.stacks-container5 {
-  color: var(--dl-color-theme-neutral-light);
-  height: auto;
-  display: flex;
-  align-self: flex-start;
-  align-items: center;
-  border-radius: var(--dl-layout-radius-inputradius);
-  flex-direction: column;
-  justify-content: center;
-  background-color: var(--dl-color-theme-primary2);
-}
- 
-.stacks-image5 {
-  width: var(--dl-layout-size-medium);
-  height: var(--dl-layout-size-medium);
-  object-fit: cover;
-}
- 
-.stacks-container6 {
-  color: var(--dl-color-theme-neutral-light);
-  height: auto;
-  display: flex;
-  align-self: flex-start;
-  align-items: center;
-  border-radius: var(--dl-layout-radius-inputradius);
-  flex-direction: column;
-  justify-content: center;
-  background-color: var(--dl-color-theme-primary2);
-}
- 
-.stacks-image6 {
-  width: var(--dl-layout-size-medium);
-  height: var(--dl-layout-size-medium);
-  object-fit: cover;
-}
- 
-.stacks-container7 {
-  color: var(--dl-color-theme-neutral-light);
-  height: auto;
-  display: flex;
-  align-self: flex-start;
-  align-items: center;
-  border-radius: var(--dl-layout-radius-inputradius);
-  flex-direction: column;
-  justify-content: center;
-  background-color: var(--dl-color-theme-primary2);
-}
- 
-.stacks-image7 {
-  width: var(--dl-layout-size-medium);
-  height: var(--dl-layout-size-medium);
-  object-fit: cover;
-}
- 
-.stacks-container8 {
-  color: var(--dl-color-theme-neutral-light);
-  height: auto;
-  display: flex;
-  align-self: flex-start;
-  align-items: center;
-  border-radius: var(--dl-layout-radius-inputradius);
-  flex-direction: column;
-  justify-content: center;
-  background-color: var(--dl-color-theme-primary2);
-}
- 
-.stacks-image8 {
-  width: var(--dl-layout-size-medium);
-  height: var(--dl-layout-size-medium);
-  object-fit: cover;
-}
- 
-.stacks-container9 {
-  color: var(--dl-color-theme-neutral-light);
-  height: auto;
-  display: flex;
-  align-self: flex-start;
-  align-items: center;
-  border-radius: var(--dl-layout-radius-inputradius);
-  flex-direction: column;
-  justify-content: center;
-  background-color: var(--dl-color-theme-primary2);
-}
- 
-.stacks-image9 {
-  width: var(--dl-layout-size-medium);
-  height: var(--dl-layout-size-medium);
-  object-fit: cover;
 }
  
 .stacks-text19 {
@@ -231,9 +93,7 @@
 .stacks-text29 {
   display: inline-block;
 }
- 
 
- 
 @media(max-width: 991px) {
   .stacks-max-width {
     gap: var(--dl-layout-space-twounits);
