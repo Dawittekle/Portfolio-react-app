@@ -13,6 +13,12 @@
   background-image: url('/rectangle%2035-1500w.png');
 }
 
+.card-card:hover {
+  margin-top: -7px;
+  box-shadow: 0 4px 6px rgba(255, 254, 254, 0.2);
+  transition: 0.3s;
+}
+
 .card-info {
   flex: 0 0 auto;
   display: flex;
