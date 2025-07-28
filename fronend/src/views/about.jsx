@@ -7,9 +7,15 @@ import Servicelists from '../components/servicelists'
 import Stacks from '../components/stacks'
 import Contactform from '../components/contactform'
 import Hfooter from '../components/hfooter'
+
+import { useScrollToHash } from '../assets/useScrollToHash'
+
 import './about.css'
 
 const About = (props) => {
+
+useScrollToHash();
+
   return (
     <div className="about-container">
       <Helmet>
@@ -82,9 +88,11 @@ const About = (props) => {
               technologies to create efficient, scalable, and impactful digital
               solutions.
             </span>
-            <button type="button" className="about-button button">
+            <a href="#download">
+              <button type="button" className="about-button button">
               Download Resume 
             </button>
+            </a>
           </div>
           <div className="about-image">
             <img
@@ -98,7 +106,7 @@ const About = (props) => {
       <Servicelists
         sectionTitle={
           <Fragment>
-            <span className="about-text21">My-services</span>
+            <span id= "services" className="about-text21">My-services</span>
           </Fragment>
         }
         feature1Title={
@@ -158,6 +166,7 @@ const About = (props) => {
           </Fragment>
         }
       ></Servicelists>
+      
       <Stacks
         feature1Title={
           <Fragment>

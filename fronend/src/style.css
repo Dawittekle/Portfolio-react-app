@@ -42,6 +42,9 @@
   --dl-layout-space-oneandhalfunits: 24px;
 }
  
+html{
+  scroll-behavior: smooth;
+}
 .button {
   color: var(--dl-color-scheme-green100);
   cursor: pointer;

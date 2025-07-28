@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom'
 
 import PropTypes from 'prop-types'
 
+import scrollToElement  from '../assets/scrollToElement.js'
+
 import './hnav.css'
 
 const Hnav = props => {
@@ -32,7 +34,7 @@ const Hnav = props => {
                 </Fragment>
               )}
             </Link>
-            <Link to='/about' className='hnav-link31 thq-body-small thq-link'>
+            <Link to='/about/#services' className='hnav-link31 thq-body-small thq-link'>
               {props.link3 ?? (
                 <Fragment>
                   <span className='hnav-text20'>_services</span>
@@ -49,14 +51,14 @@ const Hnav = props => {
                 </Fragment>
               )}
             </Link>
-            <span className='hnav-link51 thq-body-small thq-link'>
+            <Link to='/blog' className='hnav-link51 thq-body-small thq-link'>
               {props.link5 ?? (
                 <Fragment>
                   <span className='hnav-text14'>_blog</span>
                 </Fragment>
               )}
-            </span>
-            <span className='hnav-link52 thq-body-small thq-link'>
+            </Link>
+            <span  onClick={() => scrollToElement("contact")} className='hnav-link52 thq-body-small thq-link'>
               {props.link51 ?? (
                 <Fragment>
                   <span className='hnav-text21'>_contact</span>

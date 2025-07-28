@@ -6,9 +6,11 @@ import Hnav from '../components/hnav'
 import Card from '../components/card'
 import Hblog from '../components/hblog'
 import Hfooter from '../components/hfooter'
+
 import './home.css'
 
 const Home = (props) => {
+  
   return (
     <div className="home-container1">
       <Helmet>
@@ -78,7 +80,7 @@ const Home = (props) => {
               </span>
             </span>
             <div className="home-container2">
-              <span className="home-text21">Read More</span>
+              <a href="/about"> <span className="home-text21">Read More</span></a>
             </div>
           </div>
           <div className="home-image1">
@@ -103,7 +105,7 @@ const Home = (props) => {
               Here’s what I do:
             </span>
             <div className="home-container3">
-              <span className="home-text25">Read More</span>
+              <a href="/about#services"><span className="home-text25">Read More</span></a>
             </div>
           </div>
           <div className="home-image2">
@@ -192,7 +194,7 @@ const Home = (props) => {
           </div>
         </div>
         <div className="home-container7">
-          <span className="home-text37">View All Projects</span>
+          <a href="/projects"><span className="home-text37">View All Projects</span></a>
         </div>
       </div>
       <div className="home-section3 section-container">
@@ -230,7 +232,7 @@ const Home = (props) => {
             }
             text6={
               <Fragment>
-                <span className="home-text41">View More</span>
+                <a href="/blog"><span className="home-text41">View More</span></a>  
               </Fragment>
             }
             slogan1={

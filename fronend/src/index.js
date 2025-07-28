@@ -11,6 +11,7 @@ import './style.css'
 import About from './views/about'
 import Home from './views/home'
 import Projects from './views/projects'
+import blog from "./views/blog";
 import NotFound from './views/not-found'
 
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
         <Route component={About} exact path="/about" />
         <Route component={Home} exact path="/" />
         <Route component={Projects} exact path="/projects" />
+        <Route component={blog} exact path="/blog" />
         <Route component={NotFound} path="**" />
         <Redirect to="**" />
       </Switch>
