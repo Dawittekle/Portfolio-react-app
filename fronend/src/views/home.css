@@ -425,6 +425,7 @@
 .home-text41 {
   display: inline-block;
   font-family: "Italiana";
+  cursor:  pointer;
 }
 
 .home-text41:hover{
@@ -469,6 +470,7 @@
   display: inline-block;
   font-size: 25px;
   font-family: "Italiana";
+  cursor: pointer;
 }
 
 .home-text47:hover{

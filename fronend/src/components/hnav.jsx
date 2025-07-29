@@ -34,7 +34,7 @@ const Hnav = props => {
                 </Fragment>
               )}
             </Link>
-            <Link to='/about/#services' className='hnav-link31 thq-body-small thq-link'>
+            <Link to='/about#services' className='hnav-link31 thq-body-small thq-link'>
               {props.link3 ?? (
                 <Fragment>
                   <span className='hnav-text20'>_services</span>
