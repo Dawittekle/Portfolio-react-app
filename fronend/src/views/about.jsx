@@ -280,7 +280,7 @@ useScrollToHash();
       <Hfooter
         email={
           <Fragment>
-            <span className="about-text46">teklebrhandawit309@gmail.com</span>
+            <span className="about-text46">Email</span>
           </Fragment>
         }
         link1={

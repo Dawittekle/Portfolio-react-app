@@ -299,7 +299,7 @@ const Home = (props) => {
       <Hfooter
         email={
           <Fragment>
-            <span className="home-text53">teklebrhandawit309@gmail.com</span>
+            <span className="home-text53">Email</span>
           </Fragment>
         }
         link1={

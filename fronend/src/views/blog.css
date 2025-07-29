@@ -1,0 +1,35 @@
+.blogs-container {
+  width: 100%;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+.blogs-page {
+  height: 850px;
+}
+
+.blogsec1 {
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(73, 72, 72);
+  padding-bottom: 30px;
+}
+
+.blogh1 {
+  font-family: italiana;
+  font-size: 80px;
+  padding: 0px 0px 25px;
+}
+
+.blognav {
+  font-family: space mono;
+  font-size: 20px;
+}
+
+.blog-content{
+  display: flex;
+  flex:  70% 30%;
+}

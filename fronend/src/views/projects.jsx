@@ -165,7 +165,7 @@ const Projects = props => {
         email={
           <Fragment>
             <span className='projects-text29'>
-              teklebrhandawit309@gmail.com
+              Email
             </span>
           </Fragment>
         }
