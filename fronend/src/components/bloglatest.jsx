@@ -43,7 +43,7 @@ const Bloglatest = (props) => {
                 className="bloglatest-image1 thq-team-image-round"
               />
               <div className="bloglatest-content3 thq-flex-column">
-                <h3 className="bloglatest-title3 thq-heading-3">
+                <h3 className="bloglatest-title2 thq-heading-3">
                   {props.feature3Title ?? (
                     <Fragment>
                       <span className="bloglatest-text1">
@@ -68,7 +68,7 @@ const Bloglatest = (props) => {
                 className="bloglatest-image1 thq-team-image-round"
               />
               <div className="bloglatest-content4 thq-flex-column">
-                <h3 className="bloglatest-title1 thq-heading-3">
+                <h3 className="bloglatest-title2 thq-heading-3">
                   {props.feature1Title ?? (
                     <Fragment>
                       <span className="bloglatest-text6">

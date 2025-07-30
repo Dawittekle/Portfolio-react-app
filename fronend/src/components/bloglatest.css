@@ -42,6 +42,14 @@
 .bloglatest-title2 {
   font-size: 20px;
   font-family: "Italiana";
+  cursor: pointer;
+}
+
+.bloglatest-title2:hover {
+  color: #ff4a3bff;
+  text-decoration: underline;
+  font-size: 22px;
+  transition: 0.15s;
 }
  
 .bloglatest-description2 {
@@ -54,11 +62,6 @@
   align-items: flex-start;
 }
  
-.bloglatest-title3 {
-  font-size: 20px;
-  font-family: "Italiana";
-}
- 
 .bloglatest-description3 {
   font-family: "Space Mono";
 }
@@ -67,12 +70,7 @@
   gap: var(--dl-layout-space-unit);
   align-items: flex-start;
 }
- 
-.bloglatest-title1 {
-  font-size: 20px;
-  font-family: "Italiana";
-}
- 
+
 .bloglatest-description1 {
   font-size: 14px;
   font-family: "Space Mono";
