@@ -1,6 +1,12 @@
-import React, { Fragment } from 'react'
+import React, { Fragment,useState,useEffect } from 'react'
 
 import { Helmet } from 'react-helmet'
+
+import matter from 'gray-matter';
+import { Link } from 'react-router-dom';
+
+import { Buffer } from 'buffer';
+window.Buffer = Buffer;
 
 import Hnav from '../components/hnav'
 import Hfooter from '../components/hfooter'
@@ -9,6 +15,36 @@ import Bloglatest from '../components/bloglatest'
 import './blog.css'
 
 const Blogs = props => {
+
+  const [posts, setPosts] = useState([]);
+
+  useEffect(() => {
+    const importAll = (r) =>
+      r.keys().map((key) => ({
+        slug: key.replace('./', '').replace('.md', ''),
+        content: r(key).default
+      }));
+
+    const markdownFiles = importAll(
+      require.context('../posts', false, /\.md$/)
+    );
+
+    Promise.all(
+      markdownFiles.map((file) =>
+        fetch(`/posts/${file.slug}.md`)
+          .then((res) => res.text())
+          .then((text) => {
+            const { data } = matter(text);
+            return { ...data, slug: file.slug };
+          })
+      )
+    ).then((data) => {
+      const sorted = data.sort(
+        (a, b) => new Date(b.date) - new Date(a.date)
+      );
+      setPosts(sorted);
+    });
+  }, []);
   return (
     <div className='blogs-container'>
       <Helmet>
@@ -227,6 +263,20 @@ const Blogs = props => {
                 Data Science</span> <span>Books</span> <span>Design</span> <span>Movies</span> <span>Music</span></div>
             </section>
           </div>
+        </section>
+        <section className='test-section'>
+          <div>
+      <h1>Latest Posts</h1>
+      {posts.map((post) => (
+        <div key={post.slug}>
+          <img src={post.cover} alt={post.title} style={{ width: '100px' }} />
+          <Link to={`/blog/${post.slug}`}>{post.title}</Link>
+          <p>{post.date}</p>
+          <p>Category: {post.category}</p>
+          <p>Tags: {post.tags?.join(', ')}</p>
+        </div>
+      ))}
+    </div>
         </section>
       </div>
       <Hfooter
