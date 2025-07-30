@@ -66,7 +66,7 @@ const Blogs = props => {
       <div className='blogs-page'>
         <section className='blogsec1'>
           <div className='blogh1'>blogs</div>
-          <div><span>home</span>/<span>blog</span></div>
+          <div><a href="/"><span>home</span></a>/ <a href="/blog"><span>blog</span></a></div>
         </section>
         <section className='blog-content'>
           <div className='blog-all'>

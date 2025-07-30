@@ -10,7 +10,7 @@
   justify-content: center;
   background-color: transparent;
   padding-bottom: 0px;
-  padding-top: 10px;
+  padding-top: 50px;
 }
  
 .bloglist-max-width {
@@ -33,7 +33,7 @@
 .bloglist-over-title11 {
   height: auto;
   font-size: 16px;
-  align-self: flex-end;
+  align-self: flex-start;
   font-style: normal;
   text-align: center;
   font-family: "Space Mono";
@@ -51,6 +51,16 @@
   align-self: flex-start;
   text-align: left;
   font-family: "Italiana";
+  font-size: 50px;
+  font-weight: 200;
+}
+
+.bloglist-title1:hover{
+    color: #ff4a3bff;
+    text-decoration: underline;
+    transition: 0.3s;
+    cursor: pointer;
+
 }
  
 .bloglist-description1 {
@@ -72,10 +82,18 @@
   font-stretch: normal;
   margin-bottom: var(--dl-layout-space-unit);
 }
- 
+
+.bloglist-over-title12:hover{
+    color: #ff4a3bff;
+    text-decoration: underline;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
 .bloglist-text1 {
   display: inline-block;
 }
+
  
 .bloglist-text2 {
   display: inline-block;
