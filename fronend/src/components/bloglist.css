@@ -1,0 +1,135 @@
+.bloglist-layout226 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: center;
+  background-color: transparent;
+  padding-bottom: 0px;
+  padding-top: 10px;
+}
+ 
+.bloglist-max-width {
+  gap: 0px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-top: 0px;
+}
+ 
+.bloglist-column {
+  gap: var(--dl-layout-space-halfunit);
+}
+ 
+.bloglist-section-title {
+  gap: var(--dl-layout-space-unit);
+  align-self: flex-start;
+}
+ 
+.bloglist-over-title11 {
+  height: auto;
+  font-size: 16px;
+  align-self: flex-end;
+  font-style: normal;
+  text-align: center;
+  font-family: "Space Mono";
+  font-weight: 600px;
+  line-height: 150%;
+  font-stretch: normal;
+}
+ 
+.bloglist-content {
+  gap: var(--dl-layout-space-halfunit);
+  align-self: flex-start;
+}
+ 
+.bloglist-title1 {
+  align-self: flex-start;
+  text-align: left;
+  font-family: "Italiana";
+}
+ 
+.bloglist-description1 {
+  align-self: flex-start;
+  text-align: left;
+  font-family: "Space Mono";
+}
+ 
+.bloglist-over-title12 {
+  height: auto;
+  font-size: 16px;
+  align-self: flex-start;
+  font-style: normal;
+  margin-top: var(--dl-layout-space-unit);
+  text-align: center;
+  font-family: "Space Mono";
+  font-weight: 600px;
+  line-height: 150%;
+  font-stretch: normal;
+  margin-bottom: var(--dl-layout-space-unit);
+}
+ 
+.bloglist-text1 {
+  display: inline-block;
+}
+ 
+.bloglist-text2 {
+  display: inline-block;
+}
+ 
+.bloglist-text3 {
+  display: inline-block;
+}
+ 
+.bloglist-text4 {
+  display: inline-block;
+}
+ 
+.bloglistroot-class-name {
+  left: 0px;
+  right: 0px;
+  position: relative;
+  align-self: center;
+}
+ 
+@media(max-width: 991px) {
+  .bloglist-layout226 {
+    flex-direction: column;
+    background-color: transparent;
+  }
+  .bloglist-max-width {
+    flex-direction: column;
+  }
+  .bloglist-section-title {
+    gap: var(--dl-layout-space-unit);
+  }
+  .bloglist-content {
+    gap: var(--dl-layout-space-halfunit);
+    align-items: flex-start;
+  }
+  .bloglist-over-title12 {
+    position: relative;
+    margin-top: var(--dl-layout-space-unit);
+    text-align: left;
+    margin-bottom: var(--dl-layout-space-unit);
+  }
+  .bloglist-text1 {
+    font-family: Italiana;
+  }
+}
+ 
+@media(max-width: 767px) {
+  .bloglist-actions {
+    flex-wrap: wrap;
+  }
+}
+ 
+@media(max-width: 479px) {
+  .bloglist-max-width {
+    gap: var(--dl-layout-space-oneandhalfunits);
+  }
+}
