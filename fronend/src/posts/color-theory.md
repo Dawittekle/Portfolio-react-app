@@ -1,19 +1,12 @@
 ---
-title: "UI Color Theory for Developers"
-date: "2025-07-30"
-tags: ["Design", "Colors", "UI/UX"]
-category: "UI/UX"
-cover: "/assets/images/color-cover.jpg"
+title: "My First Post"
+date: "2025-06-15"
+category: "Design"
+tags: ["web", "portfolio"]
+heroImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh8EUdS96I6-wo_fDl-eqp7w-c53l8ABANtPmLnkvOi1KX2oe5y0zOWKlFgSW6fuTeMIY&usqp=CAU"
 ---
 
-Pick the right colors for your app.
+## Introduction
+This is my **first post**!
 
-## Step 1: The 60-30-10 Rule
-Balance primary, secondary, and accent colors.
-
-![60-30-10 Rule](/assets/images/color-rule.jpg)
-
-## Step 2: Contrast for Accessibility
-Ensure text is readable.
-
-![Contrast Check](/assets/images/contrast-check.jpg)
+![Sample](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh8EUdS96I6-wo_fDl-eqp7w-c53l8ABANtPmLnkvOi1KX2oe5y0zOWKlFgSW6fuTeMIY&usqp=CAU)

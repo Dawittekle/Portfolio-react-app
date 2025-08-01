@@ -10,7 +10,6 @@
   flex-direction: column;
   background-size: cover;
   justify-content: flex-end;
-  background-image: url('/rectangle%2035-1500w.png');
 }
 
 .card-card:hover {
@@ -66,52 +65,42 @@
 
 .cardroot-class-name1 {
   background-size: cover;
-  background-image: url('/rectangle%2035%20%5B2%5D-200h.png');
 }
 
 .cardroot-class-name2 {
   background-size: cover;
-  background-image: url('/rectangle%2035%20%5B1%5D-200h.png');
 }
 
 .cardroot-class-name4 {
   background-size: cover;
-  background-image: url('/rectangle%2035%20%5B1%5D-200h.png');
 }
 
 .cardroot-class-name5 {
   background-size: cover;
-  background-image: url('/rectangle%2035%20%5B2%5D-200h.png');
 }
 
 .cardroot-class-name6 {
   background-size: cover;
-  background-image: url('/rectangle%2035%20%5B2%5D-200h.png');
 }
 
 .cardroot-class-name7 {
   background-size: cover;
-  background-image: url('/rectangle%2035%20%5B2%5D-200h.png');
 }
 
 .cardroot-class-name8 {
   background-size: cover;
-  background-image: url('/rectangle%2035%20%5B2%5D-200h.png');
 }
 
 .cardroot-class-name9 {
   background-size: cover;
-  background-image: url('/rectangle%2035%20%5B2%5D-200h.png');
 }
 
 .cardroot-class-name10 {
   background-size: cover;
-  background-image: url('/rectangle%2035%20%5B2%5D-200h.png');
 }
 
 .cardroot-class-name11 {
   background-size: cover;
-  background-image: url('/rectangle%2035%20%5B2%5D-200h.png');
 }
 
 @media (max-width: 767px) {

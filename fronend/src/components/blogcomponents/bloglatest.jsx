@@ -1,7 +1,6 @@
-import React, { Fragment } from 'react'
-
+import React from 'react'
 import PropTypes from 'prop-types'
-
+import BlogItem from './BlogItem' 
 import './bloglatest.css'
 
 const Bloglatest = (props) => {
@@ -11,81 +10,30 @@ const Bloglatest = (props) => {
         <div className="bloglatest-container thq-flex-column"></div>
         <div className="thq-flex-column">
           <div className="bloglatest-list thq-flex-column">
-            <div className="thq-flex-row bloglatest-list-item1">
-              <img
-                alt={props.feature2ImageAlt}
-                src={props.feature2ImageSrc}
-                className="bloglatest-image1 thq-team-image-round"
-              />
-              <div className="bloglatest-content2 thq-flex-column">
-                <h3 className="bloglatest-title2 thq-heading-3">
-                  {props.feature2Description1 ?? (
-                    <Fragment>
-                      <span className="bloglatest-text5">
-                        Creating visually appealing and user-friendly interfaces
-                      </span>
-                    </Fragment>
-                  )}
-                </h3>
-                <span className="bloglatest-description2 thq-body-small">
-                  {props.feature2Description ?? (
-                    <Fragment>
-                      <span className="bloglatest-text4">October 25, 2023</span>
-                    </Fragment>
-                  )}
-                </span>
-              </div>
-            </div>
-            <div className="thq-flex-row bloglatest-list-item2">
-              <img
-                alt={props.feature3ImageAlt}
-                src={props.feature3ImageSrc}
-                className="bloglatest-image1 thq-team-image-round"
-              />
-              <div className="bloglatest-content3 thq-flex-column">
-                <h3 className="bloglatest-title2 thq-heading-3">
-                  {props.feature3Title ?? (
-                    <Fragment>
-                      <span className="bloglatest-text1">
-                        10 Reasons why you should make a physical portfolio
-                      </span>
-                    </Fragment>
-                  )}
-                </h3>
-                <span className="bloglatest-description3 thq-body-small">
-                  {props.feature3Description ?? (
-                    <Fragment>
-                      <span className="bloglatest-text2">October 25, 2023</span>
-                    </Fragment>
-                  )}
-                </span>
-              </div>
-            </div>
-            <div className="thq-flex-row">
-              <img
-                alt={props.feature1ImageAlt}
-                src={props.feature1ImageSrc}
-                className="bloglatest-image1 thq-team-image-round"
-              />
-              <div className="bloglatest-content4 thq-flex-column">
-                <h3 className="bloglatest-title2 thq-heading-3">
-                  {props.feature1Title ?? (
-                    <Fragment>
-                      <span className="bloglatest-text6">
-                        10 Reasons why you should make a physical portfolio
-                      </span>
-                    </Fragment>
-                  )}
-                </h3>
-                <span className="bloglatest-description1 thq-body-small">
-                  {props.feature1Description ?? (
-                    <Fragment>
-                      <span className="bloglatest-text3">October 25, 2023</span>
-                    </Fragment>
-                  )}
-                </span>
-              </div>
-            </div>
+            {/* Featured Item */}
+            <BlogItem
+              imageAlt={props.feature2ImageAlt}
+              imageSrc={props.feature2ImageSrc}
+              title={props.feature2Description1 || "Creating visually appealing interfaces"}
+              date={props.feature2Date || "October 25, 2023"}
+              isFeatured
+            />
+
+            {/* Regular Item 1 */}
+            <BlogItem
+              imageAlt={props.feature3ImageAlt}
+              imageSrc={props.feature3ImageSrc}
+              title={props.feature3Title || "10 Reasons for a physical portfolio"}
+              date={props.feature3Date || "October 25, 2023"}
+            />
+
+            {/* Regular Item 2 */}
+            <BlogItem
+              imageAlt={props.feature1ImageAlt}
+              imageSrc={props.feature1ImageSrc}
+              title={props.feature1Title || "10 Reasons for a physical portfolio"}
+              date={props.feature1Date || "October 25, 2023"}
+            />
           </div>
           <div className="thq-flex-row bloglatest-actions"></div>
         </div>
@@ -96,35 +44,32 @@ const Bloglatest = (props) => {
 
 Bloglatest.defaultProps = {
   feature3Title: undefined,
-  feature3Description: undefined,
-  feature3ImageAlt: 'Image showcasing AI-Integrated Solutions',
-  feature3ImageSrc:
-    'https://images.unsplash.com/photo-1553921895-a1b5b2500a17?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc1Mzg2MjAxN3w&ixlib=rb-4.1.0&q=80&w=1080',
-  feature1Description: undefined,
-  feature2Description: undefined,
-  feature2ImageAlt: 'Image showcasing AI-Integrated Solutions',
-  feature2ImageSrc:
-    'https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc1Mzg2MjAxN3w&ixlib=rb-4.1.0&q=80&w=1080',
-  feature1ImageSrc:
-    'https://images.unsplash.com/photo-1617606795870-bd2aa4633ebd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc1Mzg2MjAxNnw&ixlib=rb-4.1.0&q=80&w=1080',
-  feature1ImageAlt: 'Image showcasing Full-Stack Web Development',
+  feature3Date: undefined,
+  feature3ImageAlt: 'Blog post image',
+  feature3ImageSrc: 'https://images.unsplash.com/photo-1553921895-a1b5b2500a17',
+  feature1Date: undefined,
+  feature2Date: undefined,
+  feature2ImageAlt: 'Blog post image',
+  feature2ImageSrc: 'https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf',
+  feature1ImageSrc: 'https://images.unsplash.com/photo-1617606795870-bd2aa4633ebd',
+  feature1ImageAlt: 'Blog post image',
   feature2Description1: undefined,
   feature1Title: undefined,
 }
 
 Bloglatest.propTypes = {
-  feature3Title: PropTypes.element,
-  feature3Description: PropTypes.element,
+  feature3Title: PropTypes.string,
+  feature3Date: PropTypes.string,
   feature3ImageAlt: PropTypes.string,
   feature3ImageSrc: PropTypes.string,
-  feature1Description: PropTypes.element,
-  feature2Description: PropTypes.element,
+  feature1Date: PropTypes.string,
+  feature2Date: PropTypes.string,
   feature2ImageAlt: PropTypes.string,
   feature2ImageSrc: PropTypes.string,
   feature1ImageSrc: PropTypes.string,
   feature1ImageAlt: PropTypes.string,
-  feature2Description1: PropTypes.element,
-  feature1Title: PropTypes.element,
+  feature2Description1: PropTypes.string,
+  feature1Title: PropTypes.string,
 }
 
 export default Bloglatest
