@@ -7,19 +7,32 @@ import { Link } from 'react-router-dom';
 import { Buffer } from 'buffer';
 window.Buffer = Buffer;
 
-import { getAllPosts } from '../lib/loadPosts';
+import { getAllPosts, getPostsByCategory, getPostsByTag, getLatestPosts } from '../lib/loadPosts';
 
 import './BlogList.css';
 
 
 import Hnav from '../components/hnav'
 import Hfooter from '../components/hfooter'
-import Bloglist from '../components/blogcomponents/bloglist'
-import Bloglatest from '../components/blogcomponents/bloglatest'
+import BlogList from '../components/blogcomponents/BlogList'
+import BlogLatest from '../components/blogcomponents/BlogLatest'
 import './blog.css'
 
 const Blogs = props => {
-   const posts = getAllPosts();
+  const allPosts = getAllPosts();
+  const [activeCategory, setActiveCategory] = useState(null);
+  const [activeTag, setActiveTag] = useState(null);
+
+  // Get filtered posts
+  const filteredPosts = activeCategory 
+    ? getPostsByCategory(activeCategory)
+    : activeTag
+    ? getPostsByTag(activeTag)
+    : allPosts;
+
+  // Get unique categories and tags
+  const categories = [...new Set(allPosts.map(post => post.category))];
+  const tags = [...new Set(allPosts.flatMap(post => post.tags))];
 
   return (
     <div className='blogs-container'>
@@ -75,98 +88,81 @@ const Blogs = props => {
           </Fragment>
         }
       ></Hnav>
+
       <div className='blogs-page'>
-        <section className='blogsec1'>
-          <div className='blogh1'>blogs</div>
-          <div><a href="/"><span>home</span></a>/ <a href="/blog"><span>blog</span></a></div>
-        </section>
-        <section className='blog-content'>
-          <div className='blog-all'>
-            <Bloglist
-  title="10 Reasons why you should make a physical portfolio"
-  titleLink="/design-secrets"
-  ctaLink="/design-secrets#more"
-  imageSrc="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhiqeuOap9GnWvgoS9zUNwUYfnvGcWER3EZw&s"
-  description="Use high-quality images and videos to create a visually appealing
-              experience. Visuals of happy clients can significantly..."
-/>
+      <section className='blogsec1'>
+        <div className='blogh1'>Blogs</div>
+        <div>
+          <Link to="/"><span>home</span></Link> / <Link to="/blog"><span>blog</span></Link>
+        </div>
+      </section>
 
-          <Bloglist
-  title="10 Reasons why you should make a physical portfolio"
-  titleLink="/design-secrets"
-  ctaLink="/design-secrets#more"
-  imageSrc="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhiqeuOap9GnWvgoS9zUNwUYfnvGcWER3EZw&s"
-  description="Use high-quality images and videos to create a visually appealing
-              experience. Visuals of happy clients can significantly..."
-/>
+      <section className='blog-content'>
+        <div className='blog-all'>
+          {filteredPosts.length > 0 ? (
+            filteredPosts.map(post => (
+              <BlogList key={post.id} post={post} />
+            ))
+          ) : (
+            <div className="no-posts">No posts found matching your criteria</div>
+          )}
+        </div>
 
-          </div>
-          <div className='blog-filter'> 
-            <section className="blog-latest">
-              <div className="blog-text">Latest Posts</div>
-               <Bloglatest /> 
-            </section>
-            <section className="blog-categories">
-              <div className="blog-text">Categories</div>
-              <ul className="blog-list">
-                <li>
-                  <span className="blog-text30">Design</span>
-                </li>
-                <li>
-                  <span className="blog-text30">Development</span>
-                </li>
-                <li>
-                  <span className="blog-text30">History</span>
-                </li>
-                <li>
-                  <span className="blog-text30">Business</span>
-                </li>
-                <li>
-                  <span className="blog-text30">Technology</span>
-                </li>
-              </ul>
+        <div className='blog-filter'>
+          <section className="blog-latest">
+            <div className="blog-text">Latest Posts</div>
+            <BlogLatest posts={getLatestPosts(3)} />
+          </section>
 
-            </section>
-            <section className="blog-tags blog-tag-texts">
-              <div className="blog-text">Tags</div>
-              <div><span>Machine Learning</span> <span>Algorithms</span> <span>
-                Data Science</span> <span>Books</span> <span>Design</span> <span>Movies</span> <span>Music</span></div>
-            </section>
-          </div>
-        </section>
-        <section className='blog-pagination'>
+          <section className="blog-categories">
+            <div className="blog-text">Categories</div>
+            <ul className="blog-list">
+              <li onClick={() => setActiveCategory(null)}>
+                <span className={`blog-text30 ${!activeCategory ? 'active' : ''}`}>All</span>
+              </li>
+              {categories.map(category => (
+                <li 
+                  key={category}
+                  onClick={() => {
+                    setActiveCategory(category);
+                    setActiveTag(null);
+                  }}
+                >
+                  <span className={`blog-text30 ${activeCategory === category ? 'active' : ''}`}>
+                    {category}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </section>
 
- <div className="blog-container">
-      <h1 className="blog-header">Latest Posts</h1>
-      <div className="posts-grid">
-        {posts.map(post => (
-          <div key={post.id} className="post-card">
-            <Link to={`/posts/${post.id}`} className="post-link">
-              {post.heroImage && (
-                <img 
-                  src={post.heroImage} 
-                  alt={post.title}
-                  className="post-image"
-                />
-              )}
-              <div className="post-content">
-                <h2 className="post-title">{post.title}</h2>
-                <div className="post-meta">
-                  <span className="post-date">{post.date}</span>
-                  <span className="post-category">{post.category}</span>
-                </div>
-                <div className="post-tags">
-                  {post.tags?.map(tag => (
-                    <span key={tag} className="tag">#{tag}</span>
-                  ))}
-                </div>
-              </div>
-            </Link>
-          </div>
-        ))}
-      </div></div>
-        </section>
-      </div>
+          <section className="blog-tags blog-tag-texts">
+            <div className="blog-text">Tags</div>
+            <div>
+              <span 
+                onClick={() => setActiveTag(null)}
+                className={!activeTag ? 'active' : ''}
+              >
+                All
+              </span>
+              {tags.map(tag => (
+                <span
+                  key={tag}
+                  onClick={() => {
+                    setActiveTag(tag);
+                    setActiveCategory(null);
+                  }}
+                  className={activeTag === tag ? 'active' : ''}
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
+          </section>
+        </div>
+      </section>
+    </div>
+
       <Hfooter
         email={
           <Fragment>
