@@ -1,59 +1,83 @@
 import { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import { getPostById } from '../lib/loadPosts';
-import ReactMarkdown from 'react-markdown';
+import './BlogPost.css'; // Your styling
 
 export default function BlogPost() {
   const { id } = useParams();
   const [post, setPost] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
-    const loadPost = () => {
-      setLoading(true);
-      const currentPost = getPostById(id);
-      setPost(currentPost);
-      setLoading(false);
+    const loadPostData = async () => {
+      try {
+        setLoading(true);
+        const postData = getPostById(id);
+        
+        if (!postData) {
+          throw new Error('Post not found');
+        }
+
+        // Ensure required fields exist
+        const processedPost = {
+          ...postData,
+          contentHtml: postData.contentHtml || '', // Fallback if using markdown
+          heroImage: postData.heroImage || '/default-post-image.jpg'
+        };
+
+        setPost(processedPost);
+      } catch (err) {
+        setError(err.message);
+      } finally {
+        setLoading(false);
+      }
     };
 
-    loadPost();
-
-    // Hot reload handler
-    if (process.env.NODE_ENV === 'development') {
-      const handler = () => loadPost();
-      window.addEventListener('postUpdated', handler);
-      return () => window.removeEventListener('postUpdated', handler);
-    }
+    loadPostData();
   }, [id]);
 
-  if (loading) return <div>Loading...</div>;
-  if (!post) return <div>Post not found</div>;
+  if (loading) return <div className="blog-page loading">Loading post...</div>;
+  if (error) return <div className="blog-page error">Error: {error}</div>;
+  if (!post) return <div className="blog-page not-found">Post not found</div>;
 
   return (
-    <article className="max-w-2xl mx-auto py-8 px-4">
-      <img 
-        src={post.heroImage} 
-        alt={post.title}
-        className="w-full h-64 object-cover mb-6 rounded-lg"
-      />
-      <header className="mb-8">
-        <h1 className="text-3xl font-bold">{post.title}</h1>
-        <div className="flex gap-4 mt-2 text-gray-500">
-          <span>{post.date}</span>
-          <span>•</span>
-          <span>{post.category}</span>
-        </div>
-        <div className="flex gap-2 mt-2">
-          {post.tags.map(tag => (
-            <span key={tag} className="bg-gray-100 px-2 py-1 text-sm rounded">
-              #{tag}
-            </span>
-          ))}
-        </div>
-      </header>
-      <ReactMarkdown className="prose lg:prose-xl">
-        {post.content}
-      </ReactMarkdown>
-    </article>
+    <div className="blog-page">
+      <div className="post-container">
+        {/* Back button */}
+        <Link to="/blog" className="back-button">
+          ← Back to Blog
+        </Link>
+        
+        {/* Hero image */}
+        {post.heroImage && (
+          <img
+            src={post.heroImage}
+            alt={post.title}
+            className="post-hero-image"
+          />
+        )}
+        
+        {/* Post header */}
+        <header className="post-header">
+          <h1 className="post-title">{post.title}</h1>
+          <div className="post-meta">
+            <span className="post-date">{post.date}</span>
+            <span className="post-category">{post.category}</span>
+          </div>
+          <div className="post-tags">
+            {post.tags?.map(tag => (
+              <span key={tag} className="tag">#{tag}</span>
+            ))}
+          </div>
+        </header>
+        
+        {/* Post content */}
+        <div 
+          className="post-content" 
+          dangerouslySetInnerHTML={{ __html: post.contentHtml }} 
+        />
+      </div>
+    </div>
   );
 }
