@@ -104,6 +104,8 @@ const Blogs = props => {
                imageSrc={post.heroImage}
                 description={post.description}
                 date={post.date}
+                titleLink={`/blog/${post.id}`}
+                ctaLink={`/blog/${post.id}`}
              />
             ))
           ) : (

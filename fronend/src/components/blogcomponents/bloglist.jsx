@@ -5,14 +5,13 @@ import './bloglist.css'
 const Bloglist = (props) => {
   const {
     title = "10 Reasons why you should make a physical portfolio",
-    date = `in design ${new Date().toLocaleDateString('en-US', { 
+    date = `${new Date().toLocaleDateString('en-US', { 
       month: 'long', 
       day: 'numeric', 
       year: 'numeric' 
     })}`,
-    ctaText = "Read More",
     description = "Use high-quality images and videos to create a visually appealing experience...",
-    imageSrc = "https://images.unsplash.com/photo-1740560516724-c74858702711?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc1Mzg1NTQ0MHw&ixlib=rb-4.1.0&q=80&w=1080",
+    imageSrc,
     imageAlt = "Blog post thumbnail",
     rootClassName = "",
     titleLink = "#",       // Default link for title
@@ -31,7 +30,7 @@ const Bloglist = (props) => {
           <div className="bloglist-section-title thq-flex-column">
             {/* Date - unchanged */}
             <span className="bloglist-over-title11 thq-body-small">
-              <span className="blog-text20">{date}</span>
+              <span className="blog-text20">in design {date}</span>
             </span>
 
             <div className="bloglist-content thq-flex-column">
@@ -58,7 +57,7 @@ const Bloglist = (props) => {
               className="bloglist-over-title12 thq-body-small cta-link"
               onClick={onCtaClick}
             >
-              <span className="blog-text21">{ctaText}</span>
+              <span className="blog-text21">Read More</span>
             </a>
           </div>
         </div>

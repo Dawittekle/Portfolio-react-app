@@ -1,7 +1,10 @@
 import { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { getPostById } from '../lib/loadPosts';
-import './BlogPost.css'; // Your styling
+import { marked } from 'marked'; 
+import './BlogPost.css';
+
+import Giscus from '@giscus/react';
 
 export default function BlogPost() {
   const { id } = useParams();
@@ -14,15 +17,19 @@ export default function BlogPost() {
       try {
         setLoading(true);
         const postData = getPostById(id);
-        
+
         if (!postData) {
           throw new Error('Post not found');
         }
 
-        // Ensure required fields exist
+        // Convert Markdown to HTML
+        const contentHtml = postData.content
+          ? marked.parse(postData.content)
+          : '';
+
         const processedPost = {
           ...postData,
-          contentHtml: postData.contentHtml || '', // Fallback if using markdown
+          contentHtml,
           heroImage: postData.heroImage || '/default-post-image.jpg'
         };
 
@@ -43,41 +50,70 @@ export default function BlogPost() {
 
   return (
     <div className="blog-page">
-      <div className="post-container">
-        {/* Back button */}
-        <Link to="/blog" className="back-button">
+
+      <Link to="/blog" className="back-button">
           ← Back to Blog
         </Link>
         
-        {/* Hero image */}
-        {post.heroImage && (
+      <div className="post-container">
+        <div className="post-hero-image-container">{post.heroImage && (
           <img
             src={post.heroImage}
             alt={post.title}
             className="post-hero-image"
           />
-        )}
-        
-        {/* Post header */}
-        <header className="post-header">
-          <h1 className="post-title">{post.title}</h1>
-          <div className="post-meta">
-            <span className="post-date">{post.date}</span>
-            <span className="post-category">{post.category}</span>
-          </div>
-          <div className="post-tags">
-            {post.tags?.map(tag => (
-              <span key={tag} className="tag">#{tag}</span>
-            ))}
-          </div>
-        </header>
-        
-        {/* Post content */}
+        )}</div>
+
+        <div className="date-container"><span className="post-date">in design {post.date}</span></div>
+
+        <div className="post-title-container"><span className="post-title">{post.title}</span></div>
+       
+        {/* Render the HTML content */}
         <div 
           className="post-content" 
           dangerouslySetInnerHTML={{ __html: post.contentHtml }} 
         />
+
+       
+        <header className="post-meta-container">
+
+
+           <div className="post-tags">
+            <span className="tag-text">Tags : </span>
+            {post.tags?.map(tag => (
+              <span key={tag} className="tag">{tag}</span>
+            ))}
+          </div>
+
+
+          <div className="post-meta">
+            <span className="catagory">{post.category}</span>
+          </div>
+         
+        </header>
+        
       </div>
+
+       <section>
+        <div className="post-comments">
+          <h2>Comments</h2>
+          <Giscus
+            id="comments"
+            repo="Dawittekle/Portfolio-react-app"
+            repoId="R_kgDOOO4ShA"
+            category="General"
+            categoryId="DIC_kwDOOO4ShM4CtzMv"
+            mapping="pathname"
+            strict="0"
+            reactionsEnabled="1"
+            emitMetadata="0"
+            inputPosition="bottom"
+            theme="dark"
+            lang="en"
+            loading="lazy"
+          />
+        </div>
+      </section>
     </div>
   );
 }

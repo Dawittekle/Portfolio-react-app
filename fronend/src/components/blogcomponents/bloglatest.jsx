@@ -21,6 +21,7 @@ const Bloglatest = () => {
                 title={post.title}
                 date={post.date}
                 isFeatured={index === 0} // First post gets featured styling
+                link={`/blog/${post.id}`}
               />
             ))}
           </div>

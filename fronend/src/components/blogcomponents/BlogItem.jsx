@@ -7,7 +7,8 @@ const BlogItem = ({
   title = 'Creating visually appealing interfaces',
   description,
   date = 'October 25, 2023',
-  isFeatured = false
+  isFeatured = false,
+  link = '#',
 }) => {
   return (
     <div className={`thq-flex-row ${isFeatured ? 'bloglatest-list-item1' : ''}`}>
@@ -16,7 +17,7 @@ const BlogItem = ({
         src={imageSrc}
         className="bloglatest-image1 thq-team-image-round"
       />
-      <div className="bloglatest-content2 thq-flex-column">
+      <a href={link}><div className="bloglatest-content2 thq-flex-column">
         <h3 className="bloglatest-title2 thq-heading-3">
           <span className={`bloglatest-text${isFeatured ? '5' : '6'}`}>
             {title}
@@ -28,7 +29,8 @@ const BlogItem = ({
           </span>
           {description && <p className="bloglatest-excerpt">{description}</p>}
         </span>
-      </div>
+      </div></a>
+      
     </div>
   )
 }
