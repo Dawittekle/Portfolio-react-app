@@ -1,41 +1,52 @@
-import React, { Fragment } from 'react'
+import React from 'react';
+import PropTypes from 'prop-types';
+import './card.css';
 
-import PropTypes from 'prop-types'
-
-import './card.css'
-
-const Card = (props) => {
+const Card = ({
+  title,
+  description,
+  backgroundImage,
+  link,
+  rootClassName = '',
+}) => {
   return (
-    <div className={`card-card ${props.rootClassName} `}>
+    <a
+      href={link}
+      className={`card-card ${rootClassName}`}
+      style={{
+        backgroundImage: backgroundImage ? `url(${backgroundImage})` : undefined,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        display: 'block',
+        textDecoration: 'none',
+        color: 'inherit',
+      }}
+    >
       <div className="card-info">
-        <span className="card-text1">{props.text}</span>
-        <span className="card-text2">{props.text1}</span>
+        <span className="card-text1">{title}</span>
+        <span className="card-text2">{description}</span>
         <div className="card-container">
           <span className="card-text3">
-            {props.text3 ?? (
-              <Fragment>
-                <span className="card-text4">Read More</span>
-              </Fragment>
-            )}
+            <span className="card-text4">Read More</span>
           </span>
         </div>
       </div>
-    </div>
-  )
-}
-
-Card.defaultProps = {
-  text3: undefined,
-  text1: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do.',
-  rootClassName: '',
-  text: 'Business',
-}
+    </a>
+  );
+};
 
 Card.propTypes = {
-  text3: PropTypes.element,
-  text1: PropTypes.string,
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  backgroundImage: PropTypes.string,
+  link: PropTypes.string,
   rootClassName: PropTypes.string,
-  text: PropTypes.string,
-}
+};
 
-export default Card
+Card.defaultProps = {
+  backgroundImage: '',
+  link: '#',
+  rootClassName: '',
+};
+
+export default Card;
