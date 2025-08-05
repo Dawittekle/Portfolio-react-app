@@ -188,6 +188,21 @@
   font-size: 1.2rem;
 }
 
+.comment-section {
+  margin-top: 4rem;
+  padding: 40px;
+  background-color: transparent;
+  border-radius: 8px;
+  display: flex;
+}
+
+.comment-text {
+  font-size: 40px;
+  color: white;
+  font-family: 'Italiana', serif;
+  padding-bottom: 80px;
+}
+
 @media (max-width: 768px) {
   .post-hero-image {
     max-height: 300px;
