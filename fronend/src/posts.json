@@ -9,7 +9,8 @@
       "web",
       "portfolio"
     ],
-    "heroImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh8EUdS96I6-wo_fDl-eqp7w-c53l8ABANtPmLnkvOi1KX2oe5y0zOWKlFgSW6fuTeMIY&usqp=CAU"
+    "heroImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh8EUdS96I6-wo_fDl-eqp7w-c53l8ABANtPmLnkvOi1KX2oe5y0zOWKlFgSW6fuTeMIY&usqp=CAU",
+    "description": "## Introduction This is my **first post**!"
   },
   "grid-vs-flexbox": {
     "id": "grid-vs-flexbox",
@@ -22,7 +23,8 @@
       "Web Design"
     ],
     "category": "UI/UX",
-    "cover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh8EUdS96I6-wo_fDl-eqp7w-c53l8ABANtPmLnkvOi1KX2oe5y0zOWKlFgSW6fuTeMIY&usqp=CAU"
+    "cover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh8EUdS96I6-wo_fDl-eqp7w-c53l8ABANtPmLnkvOi1KX2oe5y0zOWKlFgSW6fuTeMIY&usqp=CAU",
+    "description": "When to use Grid or Flexbox? Let’s compare. ## Step 1: Flexbox for 1D Layouts"
   },
   "nextjs-basics": {
     "id": "nextjs-basics",
@@ -35,6 +37,7 @@
       "SSR"
     ],
     "category": "Frontend",
-    "cover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh8EUdS96I6-wo_fDl-eqp7w-c53l8ABANtPmLnkvOi1KX2oe5y0zOWKlFgSW6fuTeMIY&usqp=CAU"
+    "cover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh8EUdS96I6-wo_fDl-eqp7w-c53l8ABANtPmLnkvOi1KX2oe5y0zOWKlFgSW6fuTeMIY&usqp=CAU",
+    "description": "Next.js makes React better. Here’s why. ## Step 1: File-Based Routing"
   }
 }

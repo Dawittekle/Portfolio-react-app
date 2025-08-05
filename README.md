@@ -65,6 +65,3 @@ The blog section is under development. It will soon include:
 
 If you'd like to contribute, feel free to fork this repo and submit a pull request. Any feedback is also welcome!
 
-## 📄 License
-
-This project is open-source and available under the [MIT License](LICENSE).

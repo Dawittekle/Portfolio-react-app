@@ -4,8 +4,6 @@ import { Helmet } from 'react-helmet'
 
 import { Link } from 'react-router-dom';
 
-import { Buffer } from 'buffer';
-window.Buffer = Buffer;
 
 import { getAllPosts, getPostsByCategory, getPostsByTag, getLatestPosts } from '../lib/loadPosts';
 
@@ -101,7 +99,12 @@ const Blogs = props => {
         <div className='blog-all'>
           {filteredPosts.length > 0 ? (
             filteredPosts.map(post => (
-              <BlogList key={post.id} post={post} />
+              <BlogList key={post.id} post={post}
+               title ={post.title} 
+               imageSrc={post.heroImage}
+                description={post.description}
+                date={post.date}
+             />
             ))
           ) : (
             <div className="no-posts">No posts found matching your criteria</div>
