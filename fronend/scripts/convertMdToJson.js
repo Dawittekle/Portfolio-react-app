@@ -6,30 +6,42 @@ const chokidar = require('chokidar');
 const postsDir = path.join(__dirname, '../src/posts');
 const outputFile = path.join(__dirname, '../src/posts.json');
 
+function getDescription(content, wordCount = 50) {
+  const words = content
+    .replace(/\n/g, " ")
+    .split(" ")
+    .filter((word) => word.trim().length > 0);
+  return (
+    words.slice(0, wordCount).join(" ") +
+    (words.length > wordCount ? "..." : "")
+  );
+}
+
 const convertPosts = () => {
   try {
     const files = fs.readdirSync(postsDir);
     const posts = {};
 
-    files.forEach(file => {
-      if (file.endsWith('.md')) {
-        const id = file.replace(/\.md$/, '');
+    files.forEach((file) => {
+      if (file.endsWith(".md")) {
+        const id = file.replace(/\.md$/, "");
         const fullPath = path.join(postsDir, file);
-        const fileContents = fs.readFileSync(fullPath, 'utf8');
+        const fileContents = fs.readFileSync(fullPath, "utf8");
         const { data, content } = matter(fileContents);
 
         posts[id] = {
           id,
           content,
-          ...data
+          description: getDescription(content, 20), // <-- Add description here
+          ...data,
         };
       }
     });
 
     fs.writeFileSync(outputFile, JSON.stringify(posts, null, 2));
-    console.log('✅ Markdown files converted to JSON');
+    console.log("✅ Markdown files converted to JSON");
   } catch (error) {
-    console.error('Error converting markdown files:', error);
+    console.error("Error converting markdown files:", error);
   }
 };
 

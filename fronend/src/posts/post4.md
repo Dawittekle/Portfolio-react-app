@@ -3,7 +3,7 @@ title: "testin gthe propery of tag and category"
 date: "2003-06-15"
 category: "history"
 tags: ["web", "portfolio","history"]
-heroImage: "/postasset/rec2.png"
+heroImage: "/photoasset/rec2.png"
 ---
 
 ## Introduction

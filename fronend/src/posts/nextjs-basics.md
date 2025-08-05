@@ -3,7 +3,7 @@ title: "Getting Started with Next.js"
 date: "2025-07-29"
 tags: ["Next.js", "React", "SSR"]
 category: "Frontend"
-heroImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh8EUdS96I6-wo_fDl-eqp7w-c53l8ABANtPmLnkvOi1KX2oe5y0zOWKlFgSW6fuTeMIY&usqp=CAU"
+heroImage: "/photoasset/rec1.png"
 ---
 
 Next.js makes React better. Here’s why.

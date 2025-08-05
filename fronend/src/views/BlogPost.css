@@ -188,19 +188,29 @@
   font-size: 1.2rem;
 }
 
+
 .comment-section {
-  margin-top: 4rem;
-  padding: 40px;
-  background-color: transparent;
-  border-radius: 8px;
+  width: 100%;
+  padding: 80px;
   display: flex;
 }
 
+.post-comments {
+  width: 100%;
+}
+
 .comment-text {
-  font-size: 40px;
-  color: white;
-  font-family: 'Italiana', serif;
-  padding-bottom: 80px;
+  display: block;
+  margin-bottom: 80px; /* Increase gap below the comment text */
+  font-size: 60px;
+  font-family: italiana;
+}
+
+.giscus, .giscus-frame {
+  width: 100% !important;
+  min-width: 100% !important;
+  box-sizing: border-box;
+  display: block;
 }
 
 @media (max-width: 768px) {

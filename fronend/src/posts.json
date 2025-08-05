@@ -1,7 +1,8 @@
 {
   "color-theory": {
     "id": "color-theory",
-    "content": "\r\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a nisi et libero sodales dictum sit amet eu neque. Donec luctus, arcu eget viverra varius, nisi mi imperdiet nisl, quis porta lorem arcu a mi. Fusce pellentesque vehicula erat, nec blandit odio accumsan eget. Nam sem massa, venenatis ut nibh nec, tincidunt posuere metus. Sed rhoncus ut massa id ultrices. Praesent lacus enim, vulputate eget mi in, tincidunt solli citudin erat. Nullam bibendum cons ectetur odio nec blandit. In varius non lectus vitae interdum. Etiam quam erat, semper sit amet volutpat a, vestibulum ac odio. Quisque sit amet augue vel augue cursus commodo et eu eros. Praesent eget libero tincidunt, suscipit tellus quis, mollis lacus. Suspe ndisse ullamcorper nisl et mattis vestibulum. Nulla vel sodales lorem, id tristique felis. Sed eu pharetra orci, eu placerat risus. Duis congue enim molestie, tempor augue id, rhoncus odio vehicula.\r\nThis is my **first post**!\r\n\r\n![Sample](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh8EUdS96I6-wo_fDl-eqp7w-c53l8ABANtPmLnkvOi1KX2oe5y0zOWKlFgSW6fuTeMIY&usqp=CAU)",
+    "content": "\r\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a nisi et libero sodales dictum sit amet eu neque. Donec luctus, arcu eget viverra varius, nisi \r\n\r\n![Sample](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh8EUdS96I6-wo_fDl-eqp7w-c53l8ABANtPmLnkvOi1KX2oe5y0zOWKlFgSW6fuTeMIY&usqp=CAU)",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a nisi et libero sodales dictum sit amet eu neque. Donec luctus, arcu eget viverra varius, nisi ![Sample](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh8EUdS96I6-wo_fDl-eqp7w-c53l8ABANtPmLnkvOi1KX2oe5y0zOWKlFgSW6fuTeMIY&usqp=CAU)",
     "title": "My First Post",
     "date": "2001-06-15",
     "category": "Design",
@@ -9,11 +10,12 @@
       "web",
       "portfolio"
     ],
-    "heroImage": "/postasset/rec1.png"
+    "heroImage": "/photoasset/rec1.png"
   },
   "grid-vs-flexbox": {
     "id": "grid-vs-flexbox",
     "content": "\r\nWhen to use Grid or Flexbox? Let’s compare.\r\n\r\n## Step 1: Flexbox for 1D Layouts\r\nAlign items in a row or column.\r\n\r\n![Flexbox Example](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh8EUdS96I6-wo_fDl-eqp7w-c53l8ABANtPmLnkvOi1KX2oe5y0zOWKlFgSW6fuTeMIY&usqp=CAU)\r\n\r\n## Step 2: Grid for 2D Layouts\r\nPerfect for complex designs.\r\n\r\n![Grid Example](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh8EUdS96I6-wo_fDl-eqp7w-c53l8ABANtPmLnkvOi1KX2oe5y0zOWKlFgSW6fuTeMIY&usqp=CAU)",
+    "description": "When to use Grid or Flexbox? Let’s compare.\r ## Step 1: Flexbox for 1D Layouts\r Align items in a row or column.\r ![Flexbox Example](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh8EUdS96I6-wo_fDl-eqp7w-c53l8ABANtPmLnkvOi1KX2oe5y0zOWKlFgSW6fuTeMIY&usqp=CAU)\r ## Step 2: Grid for 2D Layouts\r Perfect for complex designs.\r ![Grid Example](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh8EUdS96I6-wo_fDl-eqp7w-c53l8ABANtPmLnkvOi1KX2oe5y0zOWKlFgSW6fuTeMIY&usqp=CAU)",
     "title": "CSS Grid vs Flexbox",
     "date": "2025-07-28",
     "tags": [
@@ -27,6 +29,7 @@
   "nextjs-basics": {
     "id": "nextjs-basics",
     "content": "\r\nNext.js makes React better. Here’s why.\r\n\r\n## Step 1: File-Based Routing\r\nNo `react-router` needed!\r\n\r\n![Next.js Routing](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh8EUdS96I6-wo_fDl-eqp7w-c53l8ABANtPmLnkvOi1KX2oe5y0zOWKlFgSW6fuTeMIY&usqp=CAU)\r\n\r\n## Step 2: Server-Side Rendering (SSR)\r\nFaster load times, better SEO.\r\n\r\n![SSR Example](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh8EUdS96I6-wo_fDl-eqp7w-c53l8ABANtPmLnkvOi1KX2oe5y0zOWKlFgSW6fuTeMIY&usqp=CAU)\r\n",
+    "description": "Next.js makes React better. Here’s why.\r ## Step 1: File-Based Routing\r No `react-router` needed!\r ![Next.js Routing](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh8EUdS96I6-wo_fDl-eqp7w-c53l8ABANtPmLnkvOi1KX2oe5y0zOWKlFgSW6fuTeMIY&usqp=CAU)\r ## Step 2: Server-Side Rendering (SSR)\r Faster load times, better SEO.\r ![SSR Example](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh8EUdS96I6-wo_fDl-eqp7w-c53l8ABANtPmLnkvOi1KX2oe5y0zOWKlFgSW6fuTeMIY&usqp=CAU)\r",
     "title": "Getting Started with Next.js",
     "date": "2025-07-29",
     "tags": [
@@ -35,11 +38,12 @@
       "SSR"
     ],
     "category": "Frontend",
-    "heroImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh8EUdS96I6-wo_fDl-eqp7w-c53l8ABANtPmLnkvOi1KX2oe5y0zOWKlFgSW6fuTeMIY&usqp=CAU"
+    "heroImage": "/photoasset/rec1.png"
   },
   "post4": {
     "id": "post4",
     "content": "\r\n## Introduction\r\nThis is my **first post**!\r\n\r\n![Sample](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh8EUdS96I6-wo_fDl-eqp7w-c53l8ABANtPmLnkvOi1KX2oe5y0zOWKlFgSW6fuTeMIY&usqp=CAU)",
+    "description": "## Introduction\r This is my **first post**!\r ![Sample](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh8EUdS96I6-wo_fDl-eqp7w-c53l8ABANtPmLnkvOi1KX2oe5y0zOWKlFgSW6fuTeMIY&usqp=CAU)",
     "title": "testin gthe propery of tag and category",
     "date": "2003-06-15",
     "category": "history",
@@ -48,6 +52,6 @@
       "portfolio",
       "history"
     ],
-    "heroImage": "/postasset/rec2.png"
+    "heroImage": "/photoasset/rec2.png"
   }
 }

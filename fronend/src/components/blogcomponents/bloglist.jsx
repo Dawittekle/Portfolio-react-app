@@ -47,7 +47,7 @@ const Bloglist = (props) => {
               
               {/* Description - unchanged */}
               <span className="bloglist-description1 thq-body-small">
-                <span className="blog-text22">{description}</span>
+                <span className="blog-text22">{description}...</span>
               </span>
             </div>
 

@@ -96,7 +96,7 @@ export default function BlogPost() {
 
        <section className="comment-section">
         <div className="post-comments">
-          <span className="comment-text">Leave your comment here</span><br />
+          <span className="comment-text">Leave your comment here</span>
           <Giscus
             id="comments"
             repo="Dawittekle/Portfolio-react-app"
