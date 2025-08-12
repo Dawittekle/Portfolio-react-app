@@ -2,7 +2,7 @@
   "color-theory": {
     "id": "color-theory",
     "content": "\r\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a nisi et libero sodales dictum sit amet eu neque. Donec luctus, arcu eget viverra varius, nisi \r\n\r\n![Sample](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh8EUdS96I6-wo_fDl-eqp7w-c53l8ABANtPmLnkvOi1KX2oe5y0zOWKlFgSW6fuTeMIY&usqp=CAU)",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a nisi et libero sodales dictum sit amet eu neque. Donec luctus, arcu eget viverra varius, nisi ![Sample](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh8EUdS96I6-wo_fDl-eqp7w-c53l8ABANtPmLnkvOi1KX2oe5y0zOWKlFgSW6fuTeMIY&usqp=CAU)",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a nisi et libero sodales dictum sit amet eu neque. Donec...",
     "title": "My First Post",
     "date": "2001-06-15",
     "category": "Design",
@@ -15,7 +15,7 @@
   "grid-vs-flexbox": {
     "id": "grid-vs-flexbox",
     "content": "\r\nWhen to use Grid or Flexbox? Let’s compare.\r\n\r\n## Step 1: Flexbox for 1D Layouts\r\nAlign items in a row or column.\r\n\r\n![Flexbox Example](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh8EUdS96I6-wo_fDl-eqp7w-c53l8ABANtPmLnkvOi1KX2oe5y0zOWKlFgSW6fuTeMIY&usqp=CAU)\r\n\r\n## Step 2: Grid for 2D Layouts\r\nPerfect for complex designs.\r\n\r\n![Grid Example](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh8EUdS96I6-wo_fDl-eqp7w-c53l8ABANtPmLnkvOi1KX2oe5y0zOWKlFgSW6fuTeMIY&usqp=CAU)",
-    "description": "When to use Grid or Flexbox? Let’s compare.\r ## Step 1: Flexbox for 1D Layouts\r Align items in a row or column.\r ![Flexbox Example](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh8EUdS96I6-wo_fDl-eqp7w-c53l8ABANtPmLnkvOi1KX2oe5y0zOWKlFgSW6fuTeMIY&usqp=CAU)\r ## Step 2: Grid for 2D Layouts\r Perfect for complex designs.\r ![Grid Example](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh8EUdS96I6-wo_fDl-eqp7w-c53l8ABANtPmLnkvOi1KX2oe5y0zOWKlFgSW6fuTeMIY&usqp=CAU)",
+    "description": "When to use Grid or Flexbox? Let’s compare.\r ## Step 1: Flexbox for 1D Layouts\r Align items in a row...",
     "title": "CSS Grid vs Flexbox",
     "date": "2025-07-28",
     "tags": [
@@ -29,7 +29,7 @@
   "nextjs-basics": {
     "id": "nextjs-basics",
     "content": "\r\nNext.js makes React better. Here’s why.\r\n\r\n## Step 1: File-Based Routing\r\nNo `react-router` needed!\r\n\r\n![Next.js Routing](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh8EUdS96I6-wo_fDl-eqp7w-c53l8ABANtPmLnkvOi1KX2oe5y0zOWKlFgSW6fuTeMIY&usqp=CAU)\r\n\r\n## Step 2: Server-Side Rendering (SSR)\r\nFaster load times, better SEO.\r\n\r\n![SSR Example](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh8EUdS96I6-wo_fDl-eqp7w-c53l8ABANtPmLnkvOi1KX2oe5y0zOWKlFgSW6fuTeMIY&usqp=CAU)\r\n",
-    "description": "Next.js makes React better. Here’s why.\r ## Step 1: File-Based Routing\r No `react-router` needed!\r ![Next.js Routing](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh8EUdS96I6-wo_fDl-eqp7w-c53l8ABANtPmLnkvOi1KX2oe5y0zOWKlFgSW6fuTeMIY&usqp=CAU)\r ## Step 2: Server-Side Rendering (SSR)\r Faster load times, better SEO.\r ![SSR Example](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh8EUdS96I6-wo_fDl-eqp7w-c53l8ABANtPmLnkvOi1KX2oe5y0zOWKlFgSW6fuTeMIY&usqp=CAU)\r",
+    "description": "Next.js makes React better. Here’s why.\r ## Step 1: File-Based Routing\r No `react-router` needed!\r ![Next.js Routing](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh8EUdS96I6-wo_fDl-eqp7w-c53l8ABANtPmLnkvOi1KX2oe5y0zOWKlFgSW6fuTeMIY&usqp=CAU)\r ## Step 2: Server-Side...",
     "title": "Getting Started with Next.js",
     "date": "2025-07-29",
     "tags": [
