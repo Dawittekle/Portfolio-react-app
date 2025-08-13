@@ -47,7 +47,7 @@ export default function BlogPost () {
     loadPostData()
   }, [id])
 
-  if (loading) return <div className='blog-page loading'>Loading post...</div>
+  if (loading) return <div className='blog-page loading loader'></div>
   if (error) return <div className='blog-page error'>Error: {error}</div>
   if (!post) return <div className='blog-page not-found'>Post not found</div>
 
