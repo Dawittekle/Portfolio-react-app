@@ -5,16 +5,21 @@
 
 /* HTML: <div class="loader"></div> */
 .loader {
-  width: 15px;
-  aspect-ratio: 1;
-  border-radius: 50%;
-  animation: l5 1s infinite linear alternate;
+  width: 60px;
+  aspect-ratio: 4;
+  --c: #000 90%, #0000;
+  background: radial-gradient(circle closest-side at left 6px top 50%, var(--c)),
+    radial-gradient(circle closest-side, var(--c)),
+    radial-gradient(circle closest-side at right 6px top 50%, var(--c));
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  animation: l4 1s infinite alternate;
 }
-@keyframes l5 {
-    0%  {box-shadow: 20px 0 #000, -20px 0 #0002;background: #000 }
-    33% {box-shadow: 20px 0 #000, -20px 0 #0002;background: #0002}
-    66% {box-shadow: 20px 0 #0002,-20px 0 #000; background: #0002}
-    100%{box-shadow: 20px 0 #0002,-20px 0 #000; background: #000 }
+@keyframes l4 {
+  to {
+    width: 25px;
+    aspect-ratio: 1;
+  }
 }
 
 .post-container {
@@ -166,6 +171,7 @@
 
 .post-content h3 {
   font-weight: normal;
+  font-family: 'Italiana', serif;
   font-size: 25px;
 }
 
@@ -184,11 +190,23 @@
   align-self: start;
 }
 
-.post-content a :hover {
-  color: #ff4a3bff;
-  text-decoration: underline;
-  transition: 0.15s;
+/* ...existing code... */
+.post-content a {
+  color: white !important;
 }
+.post-content a:hover {
+  color: #ff4a3bff !important;
+  text-decoration: underline !important;
+  transition: 0.15s !important;
+}
+
+.post-content em {
+  color: #ff4a3bff !important;
+  font-family: italiana !important;
+  font-size: 20px !important;
+  font-style: italic !important;
+}
+/* ...existing code... */
 
 /* Loading and error states */
 .loading,
