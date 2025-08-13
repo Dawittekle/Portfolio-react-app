@@ -10,8 +10,8 @@ const Bloglist = props => {
       day: 'numeric',
       year: 'numeric'
     })}`,
-    description = 'Use high-quality images and videos to create a visually appealing experience...',
-    imageSrc,
+    description = 'NO description yet',
+    imageSrc = '/photoasset/no-image.jpg',
     imageAlt = 'Blog post thumbnail',
     rootClassName = '',
     titleLink = '#', // Default link for title

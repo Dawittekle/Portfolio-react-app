@@ -3,10 +3,10 @@ import PropTypes from 'prop-types'
 
 const BlogItem = ({
   imageAlt = 'Blog post image',
-  imageSrc = 'https://via.placeholder.com/150',
-  title = 'Creating visually appealing interfaces',
+  imageSrc = '/photoasset/no-image.jpg',
+  title = 'NO title yet',
   description,
-  date = 'October 25, 2023',
+  date = `${new Date().toLocaleDateString()}`,
   isFeatured = false,
   link = '#',
 }) => {
