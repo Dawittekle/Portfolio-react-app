@@ -53,12 +53,18 @@ export default function BlogPost () {
 
   return (
     <>
-      <hnav />
+      <Hnav />
 
       <div className='blog-page'>
-        <Link to='/blog' className='back-button'>
-          Blogs/
-        </Link>
+        <section className='blogsec1'>
+          <div className='blogh1'>Blog Details</div>
+          <div>
+            <span>home</span> /{' '}
+            <Link to='/blog'>
+              <span>blog</span>
+            </Link>
+          </div>
+        </section>
 
         <div className='post-container'>
           <div className='post-hero-image-container'>
