@@ -1,0 +1,44 @@
+{
+  "project1": {
+    "id": "project1",
+    "content": "\r\nHere is a longer description or details about the project.\r\n",
+    "description": "A short summary of the project.",
+    "title": "My Awesome Project",
+    "date": "2025-08-10",
+    "coverImage": "/images/project1-cover.jpg",
+    "github": "https://github.com/username/project1",
+    "tech": [
+      "React",
+      "Node.js",
+      "CSS"
+    ]
+  },
+  "project2": {
+    "id": "project2",
+    "content": "\r\nHere is a longer description or details about the project.\r\n",
+    "description": "A short summary of the project.",
+    "title": "My Awesome Project",
+    "date": "2025-08-10",
+    "coverImage": "/images/project1-cover.jpg",
+    "github": "https://github.com/username/project1",
+    "tech": [
+      "React",
+      "Node.js",
+      "CSS"
+    ]
+  },
+  "project3": {
+    "id": "project3",
+    "content": "\r\nHere is a longer description or details about the project.\r\n",
+    "description": "A short summary of the project.",
+    "title": "My Awesome Project",
+    "date": "2025-08-10",
+    "coverImage": "/images/project1-cover.jpg",
+    "github": "https://github.com/username/project1",
+    "tech": [
+      "React",
+      "Node.js",
+      "CSS"
+    ]
+  }
+}
