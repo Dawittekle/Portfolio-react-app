@@ -129,6 +129,12 @@
   flex-direction: column;
 }
 
+.link-page:hover {
+  color: #ff4a3b;
+  text-decoration: underline;
+  transition: 0.15s;
+}
+
 .hfooter-link1 {
   font-size: 18px;
   font-family: 'Space Mono';
@@ -392,12 +398,39 @@
   background-color: #262626;
 }
 
+.hfooter-message {
+  display: block;
+  margin-top: 10px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.hfooter-message.error {
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+.hfooter-message.success {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.error-boundary {
+  padding: 1rem;
+  background: #ffebee;
+  border: 1px solid #ffcdd2;
+  border-radius: 4px;
+  color: #c62828;
+  margin: 1rem 0;
+}
+
 @media (max-width: 1090px) {
-  .hfooter-content{
+  .hfooter-content {
     display: flex;
     flex-direction: column;
   }
-  
+
   .hfooter-newsletter {
     width: 300px;
   }
@@ -411,6 +444,7 @@
   .hfooter-text-input {
     width: 100%;
     padding: var(--dl-layout-space-halfunit);
+    color: white;
   }
   .hfooter-button {
     width: 100%;

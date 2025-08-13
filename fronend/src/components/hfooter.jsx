@@ -1,117 +1,158 @@
-import React, { Fragment } from 'react'
-
-import PropTypes from 'prop-types'
-
+import React, { useState } from 'react'
 import './hfooter.css'
+import ErrorBoundary from './ErrorBoundary.js'
+const Hfooter = () => {
+  const [email, setEmail] = useState('')
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [message, setMessage] = useState('')
 
-const Hfooter = props => {
+  const handleSubmit = async e => {
+    e.preventDefault()
+
+    try {
+      if (!email) {
+        throw new Error('Please enter your email')
+      }
+
+      if (!/\S+@\S+\.\S+/.test(email)) {
+        throw new Error('Please enter a valid email')
+      }
+
+      setIsSubmitting(true)
+      setMessage('')
+
+      // Netlify form submission
+      const formData = new FormData()
+      formData.append('form-name', 'newsletter')
+      formData.append('email', email)
+
+      const response = await fetch('/', {
+        method: 'POST',
+        body: formData
+      })
+
+      if (!response.ok) {
+        throw new Error('Submission failed')
+      }
+
+      setEmail('')
+      setMessage('Thank you for subscribing!')
+    } catch (error) {
+      setMessage(error.message)
+    } finally {
+      setIsSubmitting(false)
+    }
+  }
+
   return (
-    <footer
-      className={`hfooter-footer1 thq-section-padding ${props.rootClassName} `}
-      id='contact'
-    >
+    <footer className='hfooter-footer1 thq-section-padding' id='contact'>
       <div className='hfooter-max-width thq-section-max-width'>
         <div className='hfooter-content'>
           <div className='hfooter-newsletter'>
             <span className='hfooter-content1 thq-body-small'>
-              Subscribe to our newsletter for the latest updates on new features
-              and product releases.
+              Subscribe to my newsletter for the latest updates.
             </span>
             <div className='hfooter-actions'>
-              <div className='hfooter-form'>
+              <form
+                name='newsletter'
+                method='POST'
+                data-netlify='true'
+                onSubmit={handleSubmit}
+                className='hfooter-form'
+                netlify-honeypot='bot-field'
+              >
+                <input type='hidden' name='form-name' value='newsletter' />
+                <div hidden>
+                  <input name='bot-field' />
+                </div>
+
                 <div className='hfooter-container'>
                   <input
                     type='email'
+                    name='email'
                     placeholder='Enter your email'
                     className='hfooter-text-input thq-input'
+                    value={email}
+                    style={{
+                      color: 'white',
+                      backgroundColor: 'transparent',
+                      fontFamily: 'Space Mono'
+                    }}
+                    onChange={e => {
+                      setEmail(e.target.value)
+                      setMessage('')
+                    }}
+                    disabled={isSubmitting}
+                    required
                   />
                 </div>
-                <button className='hfooter-button thq-button-outline'>
+                <button
+                  type='submit'
+                  className='hfooter-button thq-button-outline'
+                  disabled={isSubmitting}
+                >
                   <span className='thq-body-small'>
-                    {props.action1 ?? (
-                      <Fragment>
-                        <span className='hfooter-text17'>Subscribe</span>
-                      </Fragment>
-                    )}
+                    <span className='hfooter-text17'>
+                      {isSubmitting ? 'Subscribing...' : 'Subscribe'}
+                    </span>
                   </span>
                 </button>
-              </div>
+              </form>
+
+              {message && (
+                <div
+                  className={`hfooter-message ${
+                    message.includes('Thank you') ? 'success' : 'error'
+                  }`}
+                >
+                  {message}
+                </div>
+              )}
+
               <span className='hfooter-content2 thq-body-small'>
-                {props.content2 ?? (
-                  <Fragment>
-                    <span className='hfooter-text13'>
-                      Stay updated with our latest news and offerings.
-                    </span>
-                  </Fragment>
-                )}
+                <span className='hfooter-text13'>
+                  Stay updated with my latest news and offerings.
+                </span>
               </span>
             </div>
           </div>
           <div className='hfooter-links'>
             <div className='hfooter-column1'>
               <strong className='thq-body-large hfooter-column1-title'>
-                {props.column1Title ?? (
-                  <Fragment>
-                    <span className='hfooter-text25'>Pages</span>
-                  </Fragment>
-                )}
+                <span className='hfooter-text25'>Pages</span>
               </strong>
               <div className='hfooter-footer-links1'>
                 <a href='/' className='hfooter-link1 thq-body-small'>
-                  {props.link1 ?? (
-                    <Fragment>
-                      <span className='hfooter-text12'>Home</span>
-                    </Fragment>
-                  )}
+                  <span className='link-page'>Home</span>
                 </a>
                 <a
                   href='/about#services'
                   className='hfooter-link2 thq-body-small'
                 >
-                  {props.link2 ?? (
-                    <Fragment>
-                      <span className='hfooter-text16'>Services</span>
-                    </Fragment>
-                  )}
+                  <span className='link-page'>Services</span>
                 </a>
                 <a href='/projects' className='hfooter-link3 thq-body-small'>
-                  {props.link3 ?? (
-                    <Fragment>
-                      <span className='hfooter-text19'>Projects</span>
-                    </Fragment>
-                  )}
+                  <span className='link-page'>Projects</span>
                 </a>
-                <a href='/blog ' className='hfooter-link4 thq-body-small'>
-                  {props.link4 ?? (
-                    <Fragment>
-                      <span className='hfooter-text15'>Blog</span>
-                    </Fragment>
-                  )}
+                <a href='/blog' className='hfooter-link4 thq-body-small'>
+                  <span className='link-page'>Blog</span>
                 </a>
               </div>
             </div>
             <div className='hfooter-column2'>
               <strong className='thq-body-large hfooter-column2-title'>
-                {props.column2Title ?? (
-                  <Fragment>
-                    <span className='hfooter-text26'>Address</span>
-                  </Fragment>
-                )}
+                <span className='hfooter-text26'>Contact</span>
               </strong>
               <div className='hfooter-footer-links2'>
                 <div className='hfooter-row1 thq-flex-row'>
                   <svg viewBox='0 0 1024 1024' className='thq-icon-small'>
                     <path d='M854 342v-86l-342 214-342-214v86l342 212zM854 170q34 0 59 26t25 60v512q0 34-25 60t-59 26h-684q-34 0-59-26t-25-60v-512q0-34 25-60t59-26h684z'></path>
                   </svg>
-                  <a href='#'>
+                  <a href='mailto:teklebrhandawit309@gmail.com'>
                     <span className='hfooter-email thq-body-small'>
-                      {props.email ?? (
-                        <Fragment>
-                          <span className='hfooter-text10 hfooter-link4'>
-                            Email
-                          </span>
-                        </Fragment>
-                      )}
+                      <span className='hfooter-text10 hfooter-link4'>
+                        Email
+                      </span>
                     </span>
                   </a>
                 </div>
@@ -120,22 +161,14 @@ const Hfooter = props => {
                     <path d='M282 460q96 186 282 282l94-94q20-20 44-10 72 24 152 24 18 0 30 12t12 30v150q0 18-12 30t-30 12q-300 0-513-213t-213-513q0-18 12-30t30-12h150q18 0 30 12t12 30q0 80 24 152 8 26-10 44z'></path>
                   </svg>
                   <span className='hfooter-phone thq-body-small'>
-                    {props.phone ?? (
-                      <Fragment>
-                        <span className='hfooter-text20'>+251902468877</span>
-                      </Fragment>
-                    )}
+                    <span className='hfooter-text20'>+251902468877</span>
                   </span>
                 </div>
               </div>
             </div>
             <div className='hfooter-column3'>
               <strong className='thq-body-large hfooter-social-link1-title'>
-                {props.socialLinkTitleCategory ?? (
-                  <Fragment>
-                    <span className='hfooter-text27'>Follow Me</span>
-                  </Fragment>
-                )}
+                <span className='hfooter-text27'>Follow Me</span>
               </strong>
               <div className='hfooter-social-links'>
                 <div className='hfooter-link6'>
@@ -145,7 +178,11 @@ const Hfooter = props => {
                   >
                     <path d='M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z'></path>
                   </svg>
-                  <a href='https://instagram.com/dawit.t' target='_blank'>
+                  <a
+                    href='https://instagram.com/dawit.t'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
                     <span className='hfooter-social-link2 thq-body-small'>
                       Instagram
                     </span>
@@ -158,8 +195,7 @@ const Hfooter = props => {
                   >
                     <path d='M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z'></path>
                   </svg>
-                  <a href='#' target='_blank'>
-                    {' '}
+                  <a href='#' target='_blank' rel='noopener noreferrer'>
                     <span className='hfooter-social-link3 thq-body-small'>
                       X
                     </span>
@@ -175,8 +211,8 @@ const Hfooter = props => {
                   <a
                     href='https://www.linkedin.com/in/dawit-teklebrhan-gebrewbet/'
                     target='_blank'
+                    rel='noopener noreferrer'
                   >
-                    {' '}
                     <span className='hfooter-social-link4 thq-body-small'>
                       LinkedIn
                     </span>
@@ -190,32 +226,13 @@ const Hfooter = props => {
           <div className='thq-divider-horizontal'></div>
           <div className='hfooter-row3'>
             <span className='hfooter-content3 thq-body-small'>
-              {props.content3 ?? (
-                <Fragment>
-                  <span className='hfooter-text14'>
-                    ©2023 Dawit Teklebrhan. All rights reserved.
-                  </span>
-                </Fragment>
-              )}
+              <span className='hfooter-text14'>
+                ©2023 Dawit Teklebrhan. All rights reserved.
+              </span>
             </span>
             <div className='hfooter-footer-links3'>
               <span className='hfooter-link11 thq-body-small'>
-                {props.privacyLink ?? (
-                  <Fragment>
-                    <span className='hfooter-text21'>
-                      <span>Privacy &amp; Terms.</span>
-                      <br></br>
-                      <br></br>
-                    </span>
-                  </Fragment>
-                )}
-              </span>
-              <span className='hfooter-link11 thq-body-small'>
-                {props.cookiesLink ?? (
-                  <Fragment>
-                    <span className='hfooter-text18'>Contact me</span>
-                  </Fragment>
-                )}
+                <span className='hfooter-text21'>Privacy & Terms</span>
               </span>
             </div>
           </div>
@@ -225,42 +242,10 @@ const Hfooter = props => {
   )
 }
 
-Hfooter.defaultProps = {
-  email: undefined,
-  link5: undefined,
-  link1: undefined,
-  rootClassName: '',
-  content2: undefined,
-  content3: undefined,
-  link4: undefined,
-  link2: undefined,
-  action1: undefined,
-  cookiesLink: undefined,
-  link3: undefined,
-  phone: undefined,
-  privacyLink: undefined,
-  column1Title: undefined,
-  column2Title: undefined,
-  socialLinkTitleCategory: undefined
+export default function SafeHfooter () {
+  return (
+    <ErrorBoundary>
+      <Hfooter />
+    </ErrorBoundary>
+  )
 }
-
-Hfooter.propTypes = {
-  email: PropTypes.element,
-  link5: PropTypes.element,
-  link1: PropTypes.element,
-  rootClassName: PropTypes.string,
-  content2: PropTypes.element,
-  content3: PropTypes.element,
-  link4: PropTypes.element,
-  link2: PropTypes.element,
-  action1: PropTypes.element,
-  cookiesLink: PropTypes.element,
-  link3: PropTypes.element,
-  phone: PropTypes.element,
-  privacyLink: PropTypes.element,
-  column1Title: PropTypes.element,
-  column2Title: PropTypes.element,
-  socialLinkTitleCategory: PropTypes.element
-}
-
-export default Hfooter
