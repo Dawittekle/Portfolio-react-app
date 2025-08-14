@@ -29,18 +29,21 @@ const About = props => {
             <h1 className='about-title'>Dawit Teklebrhan</h1>
             <span className='about-text20'>Full-stack developer</span>
             <span className='about-description'>
-              I’m a passionate Full-Stack Developer with a strong focus on
-              frontend development and a growing interest in AI. Currently in my
-              third year of a Computer Science degree, I’ve worked on a wide
-              range of projects that combine clean, responsive interfaces with
-              robust backend functionality. I specialize in building modern web
-              applications using technologies like React, and I enjoy turning
-              complex ideas into intuitive user experiences. With a constant
-              drive to learn and improve, I’m always exploring new tools and
-              technologies to create efficient, scalable, and impactful digital
-              solutions.
+              A dedicated software developer specializing in frontend
+              development, with a growing expertise in artificial intelligence.
+              As a Computer Science student, I have worked on diverse projects
+              that integrate clean, responsive user interfaces with robust
+              backend systems. My core strengths include developing modern,
+              high-performance web applications using technologies such as
+              React, and transforming complex concepts into intuitive,
+              user-friendly solutions. Driven by a commitment to continuous
+              learning, I actively explore emerging tools and technologies to
+              build efficient, scalable, and impactful digital products.
             </span>
-            <a href='#download'>
+            <a
+              href='https://drive.google.com/file/d/1h5u7oUsGapsFE_kX9a4Drfig4JEUfCbn/view?usp=sharing'
+              target='_blank'
+            >
               <button type='button' className='about-button button'>
                 Download Resume 
               </button>
@@ -201,36 +204,7 @@ const About = props => {
         feature1ImageSrc='/logos/a%20simple%20login%20page%20by%20simple%20coding%20html%20and%20css%20%C3%A2%C2%98%C2%95%C3%AF%C2%B8%C2%8F%20only%20(for%20beginners)_join%20me%20follow%20me%20for%20more%20updates%20%C3%B0%C2%9F%C2%91%C2%8D%C3%B0%C2%9F%C2%8F%C2%BB_%23webdevelopment%20%23coding%20__%23html%20%23html5%20%23css%20%23coding%20%23simplecode%20%23login%20%23loginpagedesign%20%23learcoding%20-1200w.jpg'
         rootClassName='stacksroot-class-name'
       ></Stacks>
-      <Contactform
-        content1={
-          <Fragment>
-            <span className='about-text41'>
-              Have a project idea, looking to collaborate, or need a developer,
-              designer, or someone to explore interesting tech with?
-            </span>
-          </Fragment>
-        }
-        email={
-          <Fragment>
-            <span className='about-text42'>teklebrhandawit309@gmail.com</span>
-          </Fragment>
-        }
-        action={
-          <Fragment>
-            <span className='about-text43'>Send</span>
-          </Fragment>
-        }
-        phone={
-          <Fragment>
-            <span className='about-text44'>+251902468877</span>
-          </Fragment>
-        }
-        heading1={
-          <Fragment>
-            <span className='about-text45'>Contact info</span>
-          </Fragment>
-        }
-      ></Contactform>
+      <Contactform />
       <Hfooter />
     </div>
   )
