@@ -36,14 +36,20 @@ const Projects = () => {
           </div>
           <div className='projects-cards-container'>
             {allProjects.slice(0, visibleCount).map(project => (
-              <Card
-                key={project.id}
-                title={project.title}
-                description={project.description}
-                backgroundImage={project.coverImage}
-                link={project.github}
-                onClick={() => setSelectedProject(project)}
-              />
+              <div className='card-container'>
+                <Card
+                  key={project.id}
+                  title={project.title}
+                  description={project.description}
+                  backgroundImage={project.coverImage}
+                  link={project.github}
+                  onClick={() => setSelectedProject(project)}
+                />
+                <div className='card-description'>
+                  <div className='proj-date'>{project.date}</div>
+                  <div className='github'>GitHub</div>
+                </div>
+              </div>
             ))}
           </div>
           {loading && (
