@@ -40,7 +40,7 @@
 .projects-cards-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 25px;
+  gap: 30px;
 }
 
 .view-more-container {

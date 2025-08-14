@@ -5,7 +5,6 @@ import Card from '../components/card'
 import Hfooter from '../components/hfooter'
 import projectsData from '../projects.json'
 import './projects.css'
-
 import { marked } from 'marked'
 
 const Projects = () => {
@@ -18,6 +17,14 @@ const Projects = () => {
     setLoading(true)
     setTimeout(() => {
       setVisibleCount(prev => Math.min(prev + 3, allProjects.length))
+      setLoading(false)
+    }, 800)
+  }
+
+  const handleViewLess = () => {
+    setLoading(true)
+    setTimeout(() => {
+      setVisibleCount(prev => Math.max(prev - 3, 3))
       setLoading(false)
     }, 800)
   }
@@ -36,20 +43,14 @@ const Projects = () => {
           </div>
           <div className='projects-cards-container'>
             {allProjects.slice(0, visibleCount).map(project => (
-              <div className='card-container'>
-                <Card
-                  key={project.id}
-                  title={project.title}
-                  description={project.description}
-                  backgroundImage={project.coverImage}
-                  link={project.github}
-                  onClick={() => setSelectedProject(project)}
-                />
-                <div className='card-description'>
-                  <div className='proj-date'>{project.date}</div>
-                  <div className='github'>GitHub</div>
-                </div>
-              </div>
+              <Card
+                key={project.id}
+                title={project.title}
+                description={project.description}
+                backgroundImage={project.coverImage}
+                link={project.github}
+                onClick={() => setSelectedProject(project)}
+              />
             ))}
           </div>
           {loading && (
@@ -57,11 +58,18 @@ const Projects = () => {
               <div className='loader' />
             </div>
           )}
-          {!loading && visibleCount < allProjects.length && (
+          {!loading && (
             <div className='view-more-container'>
-              <button className='text-view' onClick={handleViewMore}>
-                View More
-              </button>
+              {visibleCount < allProjects.length && (
+                <button className='text-view' onClick={handleViewMore}>
+                  View More
+                </button>
+              )}
+              {visibleCount > 3 && (
+                <button className='text-view' onClick={handleViewLess} style={{ marginLeft: '10px' }}>
+                  View Less
+                </button>
+              )}
             </div>
           )}
         </div>
@@ -80,45 +88,29 @@ const Projects = () => {
           </button>
 
           <div className='overlay-content'>
+            <h2>{selectedProject.title}</h2>
             <img
               src={selectedProject.coverImage}
               alt={selectedProject.title}
               className='overlay-image'
             />
+            <p>{selectedProject.description}</p>
             <div>
-              <span>in design {selectedProject.date}</span>
+              <strong>Tech Stack:</strong> {selectedProject.tech?.join(', ')}
             </div>
-
-            <div className='proj-title-container'>
-              <span className='proj-title'>{selectedProject.title}</span>
-            </div>
-
-            <p className='proj-des'>"{selectedProject.description}"</p>
-
+            <a
+              href={selectedProject.github}
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              GitHub
+            </a>
             <div
               className='project-md-content'
               dangerouslySetInnerHTML={{
                 __html: marked.parse(selectedProject.content || '')
               }}
             />
-
-            <div className='proj-footer'>
-              <div>
-                <span className='tech-title'>Tech Stack :</span>{' '}
-                {selectedProject.tech?.join(', ')}
-              </div>
-
-              <div>
-                <a
-                  href={selectedProject.github}
-                  target='_blank'
-                  rel='noopener noreferrer'
-                  className='github-link'
-                >
-                  GitHub
-                </a>
-              </div>
-            </div>
           </div>
         </div>
       )}
@@ -127,4 +119,4 @@ const Projects = () => {
   )
 }
 
-export default Projects
+export default Projects;
