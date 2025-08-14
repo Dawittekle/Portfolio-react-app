@@ -8,7 +8,9 @@ import './projects.css'
 import { marked } from 'marked'
 
 const Projects = () => {
-  const allProjects = Object.values(projectsData)
+  const allProjects = Object.values(projectsData).sort(
+    (a, b) => new Date(b.date) - new Date(a.date)
+  )
   const [visibleCount, setVisibleCount] = useState(3)
   const [loading, setLoading] = useState(false)
   const [selectedProject, setSelectedProject] = useState(null)
@@ -66,7 +68,11 @@ const Projects = () => {
                 </button>
               )}
               {visibleCount > 3 && (
-                <button className='text-view' onClick={handleViewLess} style={{ marginLeft: '10px' }}>
+                <button
+                  className='text-view'
+                  onClick={handleViewLess}
+                  style={{ marginLeft: '10px' }}
+                >
                   View Less
                 </button>
               )}
@@ -119,4 +125,4 @@ const Projects = () => {
   )
 }
 
-export default Projects;
+export default Projects

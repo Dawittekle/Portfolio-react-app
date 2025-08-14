@@ -6,10 +6,14 @@ import Hnav from '../components/hnav'
 import Card from '../components/card'
 import Hblog from '../components/hblog'
 import Hfooter from '../components/hfooter'
+import projectsData from '../projects.json'
 
 import './home.css'
 
 const Home = props => {
+  const allProjects = Object.values(projectsData).sort(
+    (a, b) => new Date(b.date) - new Date(a.date)
+  )
   return (
     <div className='home-container1'>
       <Helmet>
@@ -118,42 +122,18 @@ const Home = props => {
             Things I’ve Built (That I’m Kinda Proud Of)
           </h1>
           <div className='home-cards-container'>
-            <Card
-              text='PlayJS'
-              text1='"Tiny games. Big fun. All in JavaScript!"'
-              text3={
-                <Fragment>
-                  <span className='home-text34'>Read More</span>
-                </Fragment>
-              }
-              rootClassName='cardroot-class-name'
-            ></Card>
-            <Card
-              text='Kulli'
-              text1='Webapp connects truck owners with people(that want to move items between places like household items...).'
-              text3={
-                <Fragment>
-                  <span className='home-text34'>Read More</span>
-                </Fragment>
-              }
-              rootClassName='cardroot-class-name2'
-            ></Card>
-            <Card
-              text='VenueLink'
-              text1='"Find or list the perfect place for any event!"'
-              text3={
-                <Fragment>
-                  <span className='home-text34'>Read More</span>
-                </Fragment>
-              }
-              rootClassName='cardroot-class-name1'
-            ></Card>
+            {allProjects.slice(0, 3).map(project => (
+              <a href='/projects'>
+                <Card
+                  key={project.id}
+                  title={project.title}
+                  description={project.description}
+                  backgroundImage={project.coverImage}
+                  link={project.github}
+                />
+              </a>
+            ))}
           </div>
-        </div>
-        <div className='home-container7'>
-          <a href='/projects'>
-            <span className='home-text37'>View All Projects</span>
-          </a>
         </div>
       </div>
       <div className='home-section3 section-container'>
