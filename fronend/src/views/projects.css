@@ -4,7 +4,6 @@
   min-height: 100vh;
   align-items: center;
   flex-direction: column;
-  padding: 80px;
 }
 
 .projects-max-width {
@@ -14,6 +13,232 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.projects-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 0px 80px 0px;
+}
+
+.text-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0px 80px 0px;
+}
+
+.projects-text19 {
+  font-family: italiana;
+  font-size: 80px;
+}
+
+.projects-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.view-more-container {
+  padding: 50px;
+}
+
+.text-view {
+  font-family: italiana;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.text-view:hover {
+  color: #ff4a3bff;
+  text-decoration: underline;
+  transition: 0.15s;
+}
+
+/* overlay Css*/
+
+.project-overlay {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0; /* Leave space at the top (adjust as needed) */
+  z-index: 9999;
+  height: auto;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(8px);
+  border-radius: 10px 10px 0px 0px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.overlay-background {
+  display: none;
+}
+
+.overlay-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  z-index: 1000;
+  color: white;
+  width: 80%;
+  max-height: 90vh;
+  overflow-y: auto; /* Enable vertical scroll inside overlay */
+  background-color: #121212;
+  border-radius: 10px;
+}
+
+.overlay-content::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.overlay-close {
+  position: absolute;
+  top: 0px;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.overlay-close:hover {
+  color: #ff4a3bff;
+  transition: 0.15s;
+}
+
+.overlay-image {
+  max-width: 80%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+/* style for project detail*/
+
+.proj-title-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0px 0px 0px;
+}
+
+.proj-title {
+  font-family: italiana;
+  font-size: 60px;
+}
+
+.proj-des {
+  font-family: italiana;
+  font-style: italic;
+  font-size: 16px;
+  padding: 40px 0px;
+}
+
+/*content of project detail*/
+
+.project-md-content {
+  width: 100%;
+  padding: 0px 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-md-content h1,
+.project-md-content h2,
+.project-md-content h3,
+.project-md-content img {
+  align-self: center;
+  text-align: center;
+}
+
+.project-md-content img {
+  display: block;
+  margin: 2rem auto;
+  max-height: 400px;
+  object-fit: cover;
+  width: 80%;
+  max-width: 800px;
+  border-radius: 8px;
+}
+
+.project-md-content h1 {
+  font-weight: normal;
+  font-size: 60px;
+  color: white;
+  font-family: 'Italiana', serif;
+}
+
+.project-md-content h2 {
+  font-weight: normal;
+  font-size: 30px;
+  font-family: 'Italiana', serif;
+}
+
+.project-md-content h3 {
+  font-weight: normal;
+  font-family: 'Italiana', serif;
+  font-size: 25px;
+}
+
+.project-md-content p {
+  margin-bottom: 1.2rem;
+  color: #ddd;
+  font-family: space mono;
+  font-size: 16px;
+  text-align: start;
+}
+
+.project-md-content ul,
+.project-md-content ol {
+  margin-left: 2rem;
+  margin-bottom: 1.2rem;
+  align-self: start;
+}
+.proj-footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 40px 40px 40px;
+}
+
+.tech-title {
+  font-family: italiana;
+  font-size: 40px;
+}
+
+.proj-footer {
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  font-family: space mono;
+  font-size: 16px;
+}
+
+.github-link {
+  font-family: italiana;
+  font-size: 25px;
+  color: white;
+  text-decoration: none;
+}
+
+.github-link:hover {
+  color: #ff4a3bff;
+  text-decoration: underline;
+  transition: 0.15s;
 }
 
 @media (max-width: 991px) {

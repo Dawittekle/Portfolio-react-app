@@ -1,16 +1,18 @@
 {
   "project1": {
     "id": "project1",
-    "content": "\r\nHere is a longer description or details about the project.\r\n",
-    "description": "A short summary of the project.",
-    "title": "My Awesome Project",
-    "date": "2025-08-10",
-    "coverImage": "/images/project1-cover.jpg",
-    "github": "https://github.com/username/project1",
+    "content": "\r\n![Homepage Preview](/photoasset/history.png)\r\n\r\n## Overview\r\n\r\nTravelEase is a modern **AI-assisted trip planning web application** that helps travelers design custom itineraries based on preferences, budget, and travel dates.  \r\nThe platform offers seamless booking integrations, real-time weather checks, and personalized recommendations — all in a beautifully simple interface.\r\n\r\n---\r\n\r\n## Features\r\n\r\n- **AI-Powered Suggestions** – Generates daily itineraries tailored to your travel style.\r\n- **Smart Budgeting** – Calculates estimated costs for accommodation, food, and activities.\r\n- **Interactive Map** – Visualize your trip plan with real-time location previews.\r\n- **Weather Sync** – Automatically adjusts plans based on weather forecasts.\r\n- **Offline Mode** – Access saved itineraries without internet.\r\n\r\n---\r\n\r\n## Screenshots\r\n\r\n### Dashboard\r\n\r\n![Dashboard Screenshot](/photoasset/ai1.jpg)\r\n\r\n### Trip Details Page\r\n\r\n![Trip Details](/photoasset/no-image.jpg)\r\n\r\n---\r\n\r\n## Tech Stack\r\n\r\n- **Frontend:** React + Tailwind CSS\r\n- **Backend:** Express.js + MongoDB\r\n- **APIs:** OpenAI API, Google Maps API, Weather API\r\n\r\n---\r\n\r\n## Installation\r\n\r\n1. **Clone the repository**\r\n   ```bash\r\n   git clone https://github.com/demo-user/travelease.git\r\n   ```\r\n",
+    "description": "An AI-powered travel planning platform that creates personalized itineraries in seconds.",
+    "title": "TravelEase – Smart Trip Planner",
+    "date": "2025-07-20",
+    "coverImage": "/photoasset/runway.webp",
+    "github": "https://github.com/demo-user/travelease",
     "tech": [
       "React",
-      "Node.js",
-      "CSS"
+      "Express",
+      "MongoDB",
+      "Tailwind CSS",
+      "OpenAI API"
     ]
   },
   "project2": {
@@ -29,6 +31,20 @@
   },
   "project3": {
     "id": "project3",
+    "content": "\r\nHere is a longer description or details about the project.\r\n",
+    "description": "A short summary of the project.",
+    "title": "My Awesome Project",
+    "date": "2025-08-10",
+    "coverImage": "/images/project1-cover.jpg",
+    "github": "https://github.com/username/project1",
+    "tech": [
+      "React",
+      "Node.js",
+      "CSS"
+    ]
+  },
+  "project4": {
+    "id": "project4",
     "content": "\r\nHere is a longer description or details about the project.\r\n",
     "description": "A short summary of the project.",
     "title": "My Awesome Project",
