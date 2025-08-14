@@ -1,0 +1,20 @@
+.hblog-feature {
+  display: flex;
+  width: 100%;
+  min-width: 300px;
+  flex-direction: column;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.date-container {
+  display: flex;
+  text-align: start;
+  padding: 8px 0px;
+}
+
+.hblog-text30 {
+  display: flex;
+  font-family: 'Space Mono';
+  font-size: 14px;
+}

@@ -105,7 +105,7 @@ const Home = props => {
                 <div className='home-container6'>
                   <span className='home-title4'>AI-Integrated Solutions</span>
                   <span className='home-text31'>
-                    Lately, I’ve been exploring the brains behind the apps —
+                    Lately, I’ve been exploring the brains behind thehome-text33 apps —
                     adding a touch of AI to make things smarter, faster, and a
                     bit more magical.
                   </span>
@@ -118,7 +118,7 @@ const Home = props => {
       <div className='section-container'>
         <div className='home-max-width3 max-width'>
           <span className='home-text32'>Projects</span>
-          <h1 className='home-text33'>
+          <h1 className=''>
             Things I’ve Built (That I’m Kinda Proud Of)
           </h1>
           <div className='home-cards-container'>
@@ -138,103 +138,7 @@ const Home = props => {
       </div>
       <div className='home-section3 section-container'>
         <div className='home-max-width4 max-width'>
-          <Hblog
-            text={
-              <Fragment>
-                <span className='home-text38'>in Design October 25, 2023</span>
-              </Fragment>
-            }
-            text1={
-              <Fragment>
-                <span className='home-text39'>in Design October 25, 2023</span>
-              </Fragment>
-            }
-            text2={
-              <Fragment>
-                <span className='home-text40'>in Design October 25, 2023</span>
-              </Fragment>
-            }
-            text3={
-              <Fragment>
-                <span className='home-text41'>Read More</span>
-              </Fragment>
-            }
-            text4={
-              <Fragment>
-                <span className='home-text41'>Read More</span>
-              </Fragment>
-            }
-            text5={
-              <Fragment>
-                <span className='home-text41'>Read More</span>
-              </Fragment>
-            }
-            text6={
-              <Fragment>
-                <a href='/blog'>
-                  <span className='home-text41'>View More</span>
-                </a>
-              </Fragment>
-            }
-            slogan1={
-              <Fragment>
-                <span className='home-text45'>Blog Post</span>
-              </Fragment>
-            }
-            heading1={
-              <Fragment>
-                <span className='home-text46'>My Latest Articles</span>
-              </Fragment>
-            }
-            feature1Title={
-              <Fragment>
-                <span className='home-text47'>
-                  10 Reasons why you should make a physical portfolio
-                </span>
-              </Fragment>
-            }
-            feature2Title={
-              <Fragment>
-                <span className='home-text47'>
-                  10 Reasons why you should make a physical portfolio
-                </span>
-              </Fragment>
-            }
-            feature3Title={
-              <Fragment>
-                <span className='home-text47'>
-                  10 Reasons why you should make a physical portfolio
-                </span>
-              </Fragment>
-            }
-            feature1Description={
-              <Fragment>
-                <span className='home-text50'>
-                  Use high-quality images and videos to create a visually
-                  appealing experience. Visuals of happy clients can
-                  significantly...
-                </span>
-              </Fragment>
-            }
-            feature2Description={
-              <Fragment>
-                <span className='home-text51'>
-                  Use high-quality images and videos to create a visually
-                  appealing experience. Visuals of happy clients can
-                  significantly...
-                </span>
-              </Fragment>
-            }
-            feature3Description={
-              <Fragment>
-                <span className='home-text52'>
-                  Use high-quality images and videos to create a visually
-                  appealing experience. Visuals of happy clients can
-                  significantly...
-                </span>
-              </Fragment>
-            }
-          ></Hblog>
+          <Hblog />
         </div>
       </div>
       <Hfooter />
