@@ -4,13 +4,16 @@ import { Helmet } from 'react-helmet'
 
 import Hnav from '../components/hnav'
 import Card from '../components/card'
-import Hblog from '../components/hblog'
+import BlogCard from '../components/BlogCard'
 import Hfooter from '../components/hfooter'
 import projectsData from '../projects.json'
+
+import { getLatestPosts } from '../lib/loadPosts'
 
 import './home.css'
 
 const Home = props => {
+  const latestPosts = getLatestPosts(3) // Always gets 3 latest posts
   const allProjects = Object.values(projectsData).sort(
     (a, b) => new Date(b.date) - new Date(a.date)
   )
@@ -105,9 +108,9 @@ const Home = props => {
                 <div className='home-container6'>
                   <span className='home-title4'>AI-Integrated Solutions</span>
                   <span className='home-text31'>
-                    Lately, I’ve been exploring the brains behind thehome-text33 apps —
-                    adding a touch of AI to make things smarter, faster, and a
-                    bit more magical.
+                    Lately, I’ve been exploring the brains behind thehome-text33
+                    apps — adding a touch of AI to make things smarter, faster,
+                    and a bit more magical.
                   </span>
                 </div>
               </div>
@@ -117,8 +120,8 @@ const Home = props => {
       </div>
       <div className='section-container'>
         <div className='home-max-width3 max-width'>
-          <span className='home-text32'>Projects</span>
-          <h1 className=''>
+          <span className='home-text22'>Projects</span>
+          <h1 className='home-text23'>
             Things I’ve Built (That I’m Kinda Proud Of)
           </h1>
           <div className='home-cards-container'>
@@ -136,9 +139,24 @@ const Home = props => {
           </div>
         </div>
       </div>
-      <div className='home-section3 section-container'>
-        <div className='home-max-width4 max-width'>
-          <Hblog />
+      <div className='section-container'>
+        <div className='home-max-width3 max-width'>
+          <span className='home-text22'>Blog Post</span>
+          <h1 className='home-text23'>My Latest Articles</h1>
+          <div className='home-cards-container'>
+            {latestPosts.map((post, index) => (
+              <BlogCard
+                key={post.id}
+                title={post.title}
+                description={post.description}
+                date={post.date}
+                link={`/blog/${post.id}`}
+                imageSrc={post.imageSrc || post.heroImage}
+                imageAlt={post.imageAlt || `Post ${index + 1}`}
+                isFeatured={index === 0}
+              />
+            ))}
+          </div>
         </div>
       </div>
       <Hfooter />

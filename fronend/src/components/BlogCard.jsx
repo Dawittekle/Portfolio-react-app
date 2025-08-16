@@ -18,32 +18,24 @@ const BlogCard = ({
           <img alt={imageAlt} src={imageSrc} className='thq-img-ratio-4-3' />
         )}
       </div>
-      <div className='date-container'>
-        <span className='hblog-text30'>in design {date}</span>
-      </div>
-
-      <div className='hblog-content'>
-        <div
-          className={`hblog-feature${
-            isFeatured ? '1' : ''
-          }-title thq-heading-3`}
-        >
-          <a href={link} className='blog-title-link'>
-            {title}
-          </a>
-        </div>
-        <p
-          className={`hblog-feature${
-            isFeatured ? '1' : ''
-          }-description thq-body-small`}
-        >
-          {description}
-        </p>
+      <div className='hblog-container'>
         <div>
-          <a href={link} className='hblog-text22'>
-            Read More
-          </a>
+          <span className='hblog-text30'>in design {date}</span>
         </div>
+
+        <div className='hblog-content'>
+          <a href={link}>
+            <span className='blog-title-link'>{title}</span>
+          </a>
+          <div>
+            <span className='blog-description'>{description}</span>
+          </div>
+        </div>
+      </div>
+      <div className='readmore-container'>
+        <a href={link}>
+          <span className='read-more'>Read More</span>
+        </a>
       </div>
     </div>
   )

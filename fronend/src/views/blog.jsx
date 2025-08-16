@@ -15,8 +15,8 @@ import './BlogList.css'
 
 import Hnav from '../components/hnav'
 import Hfooter from '../components/hfooter'
-import BlogList from '../components/blogcomponents/BlogList'
-import BlogLatest from '../components/blogcomponents/BlogLatest'
+import BlogList from '../components/blogcomponents/bloglist'
+import BlogLatest from '../components/blogcomponents/bloglatest'
 import './blog.css'
 
 const Blogs = props => {
