@@ -94,29 +94,39 @@ const Projects = () => {
           </button>
 
           <div className='overlay-content'>
-            <h2>{selectedProject.title}</h2>
             <img
               src={selectedProject.coverImage}
               alt={selectedProject.title}
               className='overlay-image'
             />
-            <p>{selectedProject.description}</p>
-            <div>
-              <strong>Tech Stack:</strong> {selectedProject.tech?.join(', ')}
+            <div className=''>in design {selectedProject.date}</div>
+            <div className='.proj-title-container'>
+              <span className='proj-title'>{selectedProject.title}</span>
             </div>
-            <a
-              href={selectedProject.github}
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              GitHub
-            </a>
+
+            <p className='proj-des'>{selectedProject.description}</p>
             <div
               className='project-md-content'
               dangerouslySetInnerHTML={{
                 __html: marked.parse(selectedProject.content || '')
               }}
             />
+            <div className='proj-footer'>
+              <div>
+                <span>
+                  <span className='tech-title'>Tech Stack:</span>{' '}
+                  {selectedProject.tech?.join(', ')}
+                </span>
+              </div>
+              <a
+                href={selectedProject.github}
+                target='_blank'
+                rel='noopener noreferrer'
+                className='github-link'
+              >
+                GitHub
+              </a>
+            </div>
           </div>
         </div>
       )}

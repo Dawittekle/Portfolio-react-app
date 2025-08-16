@@ -1,8 +1,8 @@
 .card-card {
   width: 32%;
   display: flex;
-  min-width: 350px;
-  min-height: 350px;
+  min-width: 400px;
+  min-height: 300px;
   position: relative;
   align-items: center;
   border-radius: 7px;
@@ -28,7 +28,7 @@
   width: 75%;
   border-radius: 15px;
   flex-direction: column;
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(1px);
   padding: 5px 10px;
   bottom: 5px;
   left: 5px;
