@@ -1,7 +1,7 @@
 .card-card {
   width: 32%;
   display: flex;
-  min-width: 400px;
+  min-width: 350px;
   min-height: 300px;
   position: relative;
   align-items: center;
@@ -11,6 +11,7 @@
   background-size: cover;
   justify-content: center;
   padding: 25px;
+  margin: 10px;
 }
 
 .card-card:hover {
@@ -32,6 +33,10 @@
   padding: 5px 10px;
   bottom: 5px;
   left: 5px;
+}
+
+.card-info:hover {
+  backdrop-filter: blur(8px);
 }
 
 .card-text1 {

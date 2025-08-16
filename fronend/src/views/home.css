@@ -56,6 +56,7 @@
 .home-max-width1 {
   align-items: center;
   background-color: #ff4a3b;
+  border-radius: 2px 0px 0px 100px;
 }
 
 .home-content1 {

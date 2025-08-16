@@ -1,60 +1,65 @@
 {
-  "project1": {
-    "id": "project1",
-    "content": "\r\n![Homepage Preview](/photoasset/history.png)\r\n\r\n## Overview\r\n\r\nTravelEase is a modern **AI-assisted trip planning web application** that helps travelers design custom itineraries based on preferences, budget, and travel dates.  \r\nThe platform offers seamless booking integrations, real-time weather checks, and personalized recommendations — all in a beautifully simple interface.\r\n\r\n---\r\n\r\n## Features\r\n\r\n- **AI-Powered Suggestions** – Generates daily itineraries tailored to your travel style.\r\n- **Smart Budgeting** – Calculates estimated costs for accommodation, food, and activities.\r\n- **Interactive Map** – Visualize your trip plan with real-time location previews.\r\n- **Weather Sync** – Automatically adjusts plans based on weather forecasts.\r\n- **Offline Mode** – Access saved itineraries without internet.\r\n\r\n---\r\n\r\n## Screenshots\r\n\r\n### Dashboard\r\n\r\n![Dashboard Screenshot](/photoasset/ai1.jpg)\r\n\r\n### Trip Details Page\r\n\r\n![Trip Details](/photoasset/no-image.jpg)\r\n\r\n---\r\n\r\n## Tech Stack\r\n\r\n- **Frontend:** React + Tailwind CSS\r\n- **Backend:** Express.js + MongoDB\r\n- **APIs:** OpenAI API, Google Maps API, Weather API\r\n\r\n---\r\n\r\n## Installation\r\n\r\n1. **Clone the repository**\r\n   ```bash\r\n   git clone https://github.com/demo-user/travelease.git\r\n   ```\r\n",
-    "description": "An AI-powered travel planning platform that creates personalized itineraries in seconds.",
-    "title": "TravelEase – Smart Trip Planner",
-    "date": "2025-07-20",
-    "coverImage": "/photoasset/runway.webp",
-    "github": "https://github.com/demo-user/travelease",
+  "kulli": {
+    "id": "kulli",
+    "content": "-------------------------------------------------------------\r\n\r\n![Kulli home page](/photoasset/kulli0.png)\r\n\r\n\r\nKulli is a **modern logistics and trucking service application** designed to seamlessly connect **clients** with **truck owners**.\r\nWhether it’s **household moves, shipments, or fleet management**, Kulli makes booking, tracking, and managing logistics easy and efficient.\r\n\r\n---\r\n\r\n## ✨ Key Features\r\n\r\n- 🔐 **User Registration & Authentication** (Clients & Truck Owners)\r\n- 🚛 **Truck Booking System** (Search, Select, Confirm)\r\n- 🗺️ **Live Shipment Tracking** with interactive maps\r\n- 📦 **Fleet Management** tools for truck owners\r\n- 💳 **Secure Payment System** + Invoice generation\r\n- 🔔 **Real-time Notifications** for updates\r\n- 🛡️ **Admin Dashboard** for managing users & trips\r\n\r\n---\r\n\r\n## 🛠 Tech Stack\r\n\r\n- **Frontend:** ⚛️ React.js, HTML, CSS, JavaScript\r\n- **Backend:** 🐍 Python (Flask/Django)\r\n- **Database:** 🗄️ SQLite / PostgreSQL\r\n- **Hosting:** ☁️ AWS / GCP\r\n\r\n---\r\n\r\n## 📌 Getting Started\r\n\r\n### ✅ Prerequisites\r\n\r\nMake sure you have the following installed:\r\n\r\n- 🐍 Python 3.x\r\n- 🟢 Node.js & npm\r\n- 🗄️ SQLite / PostgreSQL\r\n- 🔗 Git\r\n\r\n---\r\n\r\n### 🔧 Installation\r\n\r\n1️⃣ **Clone the Repository**\r\n\r\n```bash\r\ngit clone https://github.com/yourusername/kulli.git\r\ncd kulli\r\n```\r\n\r\n2️⃣ **Set Up Backend**\r\n\r\n```bash\r\ncd backend\r\npip install -r requirements.txt\r\npython manage.py migrate\r\npython manage.py runserver\r\n```\r\n\r\n3️⃣ **Set Up Frontend**\r\n\r\n```bash\r\ncd frontend\r\nnpm install\r\nnpm start\r\n```\r\n\r\n---\r\n\r\n## 🚀 How to Use\r\n\r\n### 👤 Step 1: Sign Up & Log In\r\n\r\nCreate an account as **Client** or **Truck Owner**.\r\n\r\n### 📦 Step 2: Book a Truck (Client)\r\n\r\n- Enter pickup & drop-off details\r\n- Select truck type\r\n- Confirm booking\r\n\r\n### 🚛 Step 3: Accept Request (Truck Owner)\r\n\r\n- View new trip requests\r\n- Accept jobs instantly\r\n\r\n### 🗺️ Step 4: Track Shipment\r\n\r\n- Monitor live truck movement on the interactive map\r\n\r\n---\r\n\r\n## 🤝 Contributing\r\n\r\nWe welcome contributions! 💡\r\n\r\n1. 🍴 Fork the repository\r\n2. 🌱 Create a feature branch:\r\n\r\n   ```bash\r\n   git checkout -b feature-name\r\n   ```\r\n\r\n3. 💾 Commit changes:\r\n\r\n   ```bash\r\n   git commit -m \"Add new feature\"\r\n   ```\r\n\r\n4. 🚀 Push to branch:\r\n\r\n   ```bash\r\n   git push origin feature-name\r\n   ```\r\n\r\n5. 🔄 Submit a Pull Request\r\n\r\n📩 For collaboration or feature ideas, reach out at: **[teklebrhandawit309@gmail.com](mailto:teklebrhandawit309@gmail.com)**\r\n\r\n---\r\n\r\n## 📧 Contact\r\n\r\nFor questions, suggestions, or feedback:\r\n📩 Email: **[teklebrhandawit309@gmail.com](mailto:teklebrhandawit309@gmail.com)**\r\n\r\n---\r\n\r\n✨ Built with passion to move things forward. 🚚💨\r\n",
+    "description": "A logistics and trucking service application that connects clients with reliable truck owners for moving and shipping.",
+    "title": "Kulli – Smart Logistics & Trucking Platform",
+    "date": "2025-02-25",
+    "coverImage": "/photoasset/kulli2.jpg",
+    "github": "https://github.com/Dawittekle/KULLI-react-APP",
     "tech": [
       "React",
-      "Express",
-      "MongoDB",
-      "Tailwind CSS",
-      "OpenAI API"
+      "Node",
+      "MangoDB",
+      "JavaScript",
+      "Python"
     ]
   },
   "project2": {
     "id": "project2",
-    "content": "\r\nHere is a longer description or details about the project.\r\n",
-    "description": "A short summary of the project.",
-    "title": "My Awesome Project",
-    "date": "2025-08-10",
-    "coverImage": "/images/project1-cover.jpg",
-    "github": "https://github.com/username/project1",
+    "content": "-------------------------------------------------\r\n\r\n![home page](/photoasset/event1.png)\r\n\r\nA web platform that connects individuals and organizations with venue owners for all types of events. Whether you're planning a wedding, corporate event, or concert, **Venue Link** helps you find and book the perfect venue — quickly and effortlessly.\r\n\r\n## 📝 Description\r\n\r\n**Venue Link** bridges the gap between event organizers and venue owners. Users can easily browse, find, and book venues for:\r\n\r\n- 💍 Weddings\r\n- 🏢 Corporate Events\r\n- 🛍️ Trade Shows\r\n- 🚀 Product Launches\r\n- 🎓 Graduations\r\n- 🎶 Concerts\r\n- 🎉 Private Parties\r\n- 🎤 Conferences\r\n- 📚 Seminars\r\n- 🛠️ Workshops\r\n\r\nVenue owners can register and manage their listings, making their venues visible and bookable to a broad audience. This system reduces the time and stress involved in finding and securing event spaces.\r\n\r\n---\r\n\r\n## 🧰 Tech Stack\r\n\r\n---\r\n\r\n## ⚙️ Installation\r\n\r\nTo run the Event-Booking project locally, follow the steps below. We recommend using **XAMPP** as your local development environment.\r\n\r\n### ✅ Prerequisites\r\n\r\n- [XAMPP](https://www.apachefriends.org/) (includes PHP, MySQL, and Apache)\r\n\r\n### 🚀 Steps\r\n\r\n1️⃣ **Download or Clone the Repository**\r\n\r\n```bash\r\ngit clone https://github.com/Dawittekle/event-booking.git\r\n```\r\n\r\n2️⃣ **Move the Project to XAMPP**\r\nCopy the project folder (`event-booking`) into your XAMPP `htdocs` directory:\r\n\r\n```\r\nC:\\xampp\\htdocs\\\r\n```\r\n\r\n3️⃣ **Start XAMPP Services**\r\n\r\n- Start **Apache** and **MySQL** from the XAMPP Control Panel\r\n\r\n4️⃣ **Set Up the Database**\r\n\r\n- Go to [http://localhost/phpmyadmin](http://localhost/phpmyadmin)\r\n- Click on **Import** → Select `event_booking.sql` (from the project folder)\r\n- Click **Go** to create the database schema and tables\r\n\r\n5️⃣ **Configure Database Connection**\r\nEdit `config.php` or `db.php`:\r\n\r\n```php\r\n$servername = \"localhost\";\r\n$username = \"root\";\r\n$password = \"\";\r\n$dbname = \"event_booking\"; // Match the imported DB name\r\n```\r\n\r\n6️⃣ **Run the Application**\r\nOpen in browser:\r\n\r\n```\r\nhttp://localhost/event-booking\r\n```\r\n\r\n---\r\n\r\n## 📸 Screenshots\r\n\r\n- 🏠 Homepage\r\n\r\n[XAMPP](https://www.apachefriends.org/)\r\n\r\n- 📋 Venue Listings\r\n\r\n- 📝 Booking Form\r\n\r\n- 📊 Dashboard\r\n\r\n- 🧾 Register Form\r\n\r\n---\r\n\r\n## 📌 Usage Notes\r\n\r\n- 📂 Use the provided SQL file to initialize the database\r\n- 👤 Users must **register** and **log in** to book venues\r\n- 🏢 Venue owners must **register their venue** through the portal\r\n\r\n---\r\n\r\n## 👥 Author\r\n\r\n**Dawit Teklebrhan**\r\nGitHub: [@Dawittekle](https://github.com/Dawittekle)\r\n\r\nSpecial thanks to the team members who contributed to the development of this project.\r\n\r\n---\r\n\r\n## 🤝 Contributing\r\n\r\nPull requests are welcome. For major changes, please open an issue first to discuss what you would like to change or improve.\r\n",
+    "description": "A web platform that connects individuals and organizations with venue owners for all types of events.",
+    "title": "🎉 Event-Booking (Venue Link)",
+    "date": "2025-02-21",
+    "coverImage": "/photoasset/event1.png",
+    "github": "[https://github.com/Dawittekle/event-booking](https://github.com/Dawittekle/event-booking)",
     "tech": [
-      "React",
-      "Node.js",
-      "CSS"
+      "PHP",
+      "MySQL",
+      "HTML",
+      "CSS",
+      "JavaScript"
     ]
   },
   "project3": {
     "id": "project3",
-    "content": "\r\nHere is a longer description or details about the project.\r\n",
-    "description": "A short summary of the project.",
-    "title": "My Awesome Project",
-    "date": "2025-08-10",
-    "coverImage": "/images/project1-cover.jpg",
-    "github": "https://github.com/username/project1",
+    "content": "----------------------------------------------------------\r\n\r\n**PlayJS** is a web platform that brings together a variety of fun, engaging, and lightweight JavaScript games. Built from scratch with vanilla JavaScript, these games are designed to be simple yet entertaining, accessible right in your browser.\r\n\r\n---\r\n\r\n## 📝 Description\r\n\r\nPlayJS is my personal gaming hub where I showcase the collection of mini-games I’ve built over time while learning and experimenting with JavaScript. From classic arcade-style games to puzzle challenges, PlayJS demonstrates creativity and problem-solving through code.\r\n\r\nSome of the featured games include:\r\n\r\n- 🐍 **Snake Game** – A classic snake game built with the Canvas API.\r\n- 🧩 **Tic-Tac-Toe** – Simple 2-player logic game.\r\n- 🏃 **Dino Run Clone** – A Chrome dino game replica.\r\n- 🎲 **Guess the Number** – Fun number guessing logic.\r\n- 🧱 **Brick Breaker** – A breakout-style game using collision detection.\r\n- ⏱️ **Memory Match** – A card matching puzzle game.\r\n\r\nAll games are playable directly on the web platform.\r\n\r\n---\r\n\r\n## 🧰 Tech Stack\r\n\r\n- **HTML5** – Game structure & layout\r\n- **CSS3** – Styling & animations\r\n- **JavaScript (ES6)** – Game logic & interactivity\r\n- **Canvas API** – Rendering 2D game graphics\r\n- **Node.js** – Backend setup (optional for serving platform)\r\n\r\n---\r\n\r\n## ⚙️ Installation\r\n\r\n### ✅ Prerequisites\r\n\r\n- Web browser (Chrome, Firefox, or Edge)\r\n- Node.js (optional if serving with backend)\r\n\r\n### 🚀 Steps\r\n\r\n1️⃣ Clone the repository:\r\n\r\n```bash\r\ngit clone https://github.com/Dawittekle/playjs.git\r\n```\r\n\r\n2️⃣ Open the project folder:\r\n\r\n```bash\r\ncd playjs\r\n```\r\n\r\n3️⃣ Open `index.html` in your browser to play the games.\r\n\r\n(Optional)\r\nIf you want to run it with Node.js:\r\n\r\n```bash\r\nnpm install\r\nnpm start\r\n```\r\n\r\nThen open [http://localhost:3000](http://localhost:3000)\r\n\r\n---\r\n\r\n## 📸 Screenshots\r\n\r\n- 🐍 Snake Game\r\n- 🧩 Tic-Tac-Toe\r\n- 🏃 Dino Run Clone\r\n- 🎲 Guess the Number\r\n- 🧱 Brick Breaker\r\n- ⏱️ Memory Match\r\n\r\n---\r\n\r\n## 📌 Usage Notes\r\n\r\n- Play directly in your browser.\r\n- Works on both desktop and mobile (responsive design).\r\n- Great for quick fun & coding demos.\r\n\r\n---\r\n\r\n## 👥 Author\r\n\r\n**Dawit Teklebrhan**\r\nGitHub: [@Dawittekle](https://github.com/Dawittekle)\r\n\r\n---\r\n\r\n## 🤝 Contributing\r\n\r\nContributions are welcome! Feel free to suggest new game ideas or improvements via pull requests or issues.\r\n",
+    "description": "A web platform showcasing a collection of fun and interactive JavaScript games developed by me.",
+    "title": "🎮 PlayJS – JavaScript Games Hub",
+    "date": "2025-02-15",
+    "coverImage": "/photoasset/event0.jpg",
+    "github": "[https://github.com/Dawittekle/playjs](https://github.com/Dawittekle/playjs)",
     "tech": [
-      "React",
-      "Node.js",
-      "CSS"
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Canvas API",
+      "Node.js"
     ]
   },
   "project4": {
     "id": "project4",
-    "content": "\r\nHere is a longer description or details about the project.\r\n",
-    "description": "A short summary of the project.",
-    "title": "My Awesome Project",
-    "date": "2025-08-10",
-    "coverImage": "/images/project1-cover.jpg",
-    "github": "https://github.com/username/project1",
+    "content": "------------------------------------------------------\r\n\r\n![logo](/photoasset/tserepng.png)\r\n\r\nA powerful **Telegram bot** that detects and removes hate speech in group chats using **NLP**. It warns users, notifies admins, and automatically removes repeat offenders.\r\n\r\n👉 Try it here: [@tserealutawi\\_bot](https://t.me/tserealutawi_bot)\r\n\r\n---\r\n\r\n## ✨ Features\r\n\r\n- ✅ **Auto-Delete Hate Speech** – Instantly removes offensive messages\r\n- ✅ **User Warning System** – Issues up to 5 warnings before removal\r\n- ✅ **Auto-Kick Offenders** – Users with 5 warnings are removed\r\n- ✅ **Admin Notifications** – Alerts admins about violations\r\n- ✅ **Admin Management** – Add or remove admins easily\r\n\r\n---\r\n\r\n## 🧰 Tech Stack\r\n\r\n- 🐍 Python\r\n- 🤖 Telegram Bot API (`python-telegram-bot`)\r\n- 🧠 NLP Model (Hate Speech Detection)\r\n- ⚙️ `python-dotenv` for environment variables\r\n\r\n---\r\n\r\n## ⚙️ Installation\r\n\r\n### ✅ Prerequisites\r\n\r\n- Python 3.8+\r\n- A **Telegram Bot Token** (from [@BotFather](https://t.me/BotFather))\r\n\r\n### 🚀 Steps\r\n\r\n1️⃣ **Clone the Repository**\r\n\r\n```bash\r\ngit clone https://github.com/your-username/hate-speech-monitor-bot.git\r\ncd hate-speech-monitor-bot\r\n```\r\n\r\n2️⃣ **Install Dependencies**\r\n\r\n```bash\r\npip install -r requirements.txt\r\n```\r\n\r\n3️⃣ **Create `.env` File**\r\n\r\n```env\r\nBOT_TOKEN=your-telegram-bot-token\r\n```\r\n\r\n4️⃣ **Run the Bot**\r\n\r\n```bash\r\npython bot.py\r\n```\r\n\r\n---\r\n\r\n## 📌 Commands\r\n\r\n**User Commands**\r\n\r\n- `/help` – Show available commands\r\n- `/id` – Get your Telegram user ID\r\n\r\n**Admin Commands**\r\n\r\n- `/addadmin <user_id>` – Add an admin\r\n- `/removeadmin <user_id>` – Remove an admin\r\n- `/listadmins` – List all admins\r\n- `/unban <user_id>` – Unban a user and reset warnings\r\n\r\n---\r\n\r\n## 🤖 How It Works\r\n\r\n1. The bot **monitors messages** in your group\r\n2. If a message contains **hate speech**, it is **deleted**\r\n3. The user receives a **warning** privately\r\n4. After **5 warnings**, the user is **removed** from the group\r\n5. **Admins are notified** about violations\r\n\r\n---\r\n\r\n## ⚠️ Notes\r\n\r\n- The bot must have **Admin permissions** in your Telegram group\r\n- Admins can manage the bot with the provided commands\r\n\r\n---\r\n\r\n## 👥 Author\r\n\r\n**Dawit Teklebrhan**\r\nGitHub: [@Dawittekle](https://github.com/Dawittekle)\r\n\r\n---\r\n\r\n## 🤝 Contributing\r\n\r\nWant to add **multi-language support** or new features? Open a pull request or contact me!\r\n\r\n---\r\n\r\n🔥 Developed with ❤️ to keep communities safe!\r\n",
+    "description": "A Telegram bot that automatically detects and removes hate speech from group chats using NLP.",
+    "title": "🚀 ጸረ አሉታዊ Bot",
+    "date": "2025-02-20",
+    "coverImage": "/photoasset/tserepng.png",
+    "github": "https://github.com/Dawittekle/TsereAlutawi",
     "tech": [
-      "React",
-      "Node.js",
-      "CSS"
+      "Python",
+      "python-telegram-bot",
+      "NLP",
+      "dotenv"
     ]
   }
 }

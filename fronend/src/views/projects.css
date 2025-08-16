@@ -117,7 +117,7 @@
   width: 80%;
   max-height: 90vh;
   overflow-y: auto; /* Enable vertical scroll inside overlay */
-  background-color: #121212;
+  background-color: #1f1f1f;
   border-radius: 10px;
 }
 
@@ -153,13 +153,15 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
-  padding: 10px 0px 0px 0px;
+  align-self: center;
+  margin-top: 25px;
+  padding: 30px;
 }
 
 .proj-title {
   font-family: italiana;
   font-size: 60px;
+  align-content: center;
 }
 
 .proj-des {
@@ -183,8 +185,8 @@
 .project-md-content h2,
 .project-md-content h3,
 .project-md-content img {
-  align-self: center;
-  text-align: center;
+  align-self: left;
+  text-align: left;
 }
 
 .project-md-content img {
@@ -192,7 +194,7 @@
   margin: 2rem auto;
   max-height: 400px;
   object-fit: cover;
-  width: 80%;
+  width: 100%;
   max-width: 800px;
   border-radius: 8px;
 }
@@ -223,6 +225,12 @@
   font-family: space mono;
   font-size: 16px;
   text-align: start;
+}
+
+.project-md-content a:hover {
+  color: #ff4a3bff;
+  text-decoration: underline;
+  transition: 0.15s;
 }
 
 .project-md-content ul,

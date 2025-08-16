@@ -94,12 +94,6 @@ const Projects = () => {
           </button>
 
           <div className='overlay-content'>
-            <img
-              src={selectedProject.coverImage}
-              alt={selectedProject.title}
-              className='overlay-image'
-            />
-            <div className=''>in design {selectedProject.date}</div>
             <div className='.proj-title-container'>
               <span className='proj-title'>{selectedProject.title}</span>
             </div>
